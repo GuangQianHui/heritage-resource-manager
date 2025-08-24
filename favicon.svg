@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- 背景圆形 -->
+  <circle cx="32" cy="32" r="30" fill="url(#gradient)" stroke="#DC143C" stroke-width="2"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E75480;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DB7093;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 数据库图标主体 -->
+  <rect x="16" y="20" width="32" height="24" rx="2" fill="white" opacity="0.9"/>
+  
+  <!-- 数据库顶部装饰 -->
+  <rect x="18" y="18" width="28" height="4" rx="2" fill="white" opacity="0.8"/>
+  
+  <!-- 数据库底部装饰 -->
+  <rect x="20" y="42" width="24" height="2" rx="1" fill="white" opacity="0.7"/>
+  
+  <!-- 文档图标 -->
+  <rect x="22" y="24" width="20" height="16" rx="1" fill="#DC143C" opacity="0.8"/>
+  
+  <!-- 文档折角 -->
+  <path d="M 38 24 L 42 28 L 38 28 Z" fill="#DC143C" opacity="0.9"/>
+  
+  <!-- 文档内容线条 -->
+  <line x1="26" y1="28" x2="36" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="26" y1="32" x2="34" y2="32" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="26" y1="36" x2="32" y2="36" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 装饰性圆点 -->
+  <circle cx="28" cy="40" r="1" fill="white" opacity="0.8"/>
+  <circle cx="32" cy="40" r="1" fill="white" opacity="0.8"/>
+  <circle cx="36" cy="40" r="1" fill="white" opacity="0.8"/>
+  
+  <!-- 顶部装饰元素 -->
+  <circle cx="32" cy="12" r="2" fill="#FFD700"/>
+  <circle cx="26" cy="14" r="1.5" fill="#FFD700" opacity="0.8"/>
+  <circle cx="38" cy="14" r="1.5" fill="#FFD700" opacity="0.8"/>
+</svg>

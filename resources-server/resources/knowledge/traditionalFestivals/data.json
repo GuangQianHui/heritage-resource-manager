@@ -1,0 +1,799 @@
+{
+  "寒露": {
+    "id": "寒露",
+    "title": "寒露",
+    "description": "寒露为二十四节气之一，寒气渐生，昼夜温差进一步加大",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "寒气",
+      "秋深",
+      "润燥",
+      "保暖"
+    ],
+    "keywords": [
+      "寒露",
+      "二十四节气",
+      "秋深",
+      "润燥",
+      "保暖"
+    ],
+    "history": "由白露进寒露，示秋令深入，需注意温差。",
+    "technique": "早晚添衣、润燥护肺；农事防早霜。",
+    "features": "夜寒露重、晨晚清凉。",
+    "funFact": "岭南有寒露时节品秋茶、尝时鲜。",
+    "media": [
+      {
+        "name": "寒露.png",
+        "type": "image",
+        "size": 799549,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-28-20_______.png"
+      }
+    ],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-09T17:28:21.338Z",
+    "type": "traditionalFestivals",
+    "icon": ""
+  },
+  "霜降": {
+    "id": "霜降",
+    "title": "霜降",
+    "description": "霜降为二十四节气之一，气温显著下降，作物陆续收获",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "初霜",
+      "收获",
+      "收藏",
+      "降温"
+    ],
+    "keywords": [
+      "霜降",
+      "二十四节气",
+      "初霜",
+      "收获",
+      "降温"
+    ],
+    "history": "物候见霜，古以霜降记得岁收成收尾。",
+    "technique": "及时收贮、整地备冬；养生温补。",
+    "features": "昼短夜长、秋深转冬。",
+    "funFact": "有吃柿子、防秋燥裂之俗。",
+    "media": [
+      {
+        "name": "霜降.jpg",
+        "type": "image",
+        "size": 190539,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-27-44_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-09T17:27:45.571Z",
+    "type": "traditionalFestivals",
+    "icon": ""
+  },
+  "小雪": {
+    "id": "小雪",
+    "title": "小雪",
+    "description": "小雪为二十四节气之一，寒潮活动增多，偶有初雪",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "初雪",
+      "降温",
+      "御寒",
+      "保暖"
+    ],
+    "keywords": [
+      "小雪",
+      "二十四节气",
+      "初雪",
+      "御寒",
+      "保暖"
+    ],
+    "history": "小雪标志冬令渐近，古人以衣物换季御寒。",
+    "technique": "添衣防寒、润燥养阴；农事防冻。",
+    "features": "气温下降、空气干燥。",
+    "funFact": "江南有腌菜、晒鱼以备冬之俗。",
+    "media": [
+      {
+        "name": "小雪.webp",
+        "type": "image",
+        "size": 21918,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-28-04_______.webp"
+      }
+    ],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-09T17:28:05.273Z",
+    "type": "traditionalFestivals",
+    "icon": ""
+  },
+  "大雪": {
+    "id": "大雪",
+    "title": "大雪",
+    "description": "二十四节气之一，雪量增大、气候严寒",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "大雪",
+      "严寒",
+      "御寒",
+      "积雪"
+    ],
+    "keywords": [
+      "大雪",
+      "二十四节气",
+      "严寒",
+      "积雪",
+      "御寒"
+    ],
+    "history": "大雪提示深冬将临，农事转入设施保温管理。",
+    "technique": "防寒保温、设施农业保暖；起居早睡晚起。",
+    "features": "气温低、降雪多、日照短。",
+    "funFact": "北方有食羊肉汤、饺子御寒之俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-08T08:08:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-snowflake"
+  },
+  "小寒": {
+    "id": "小寒",
+    "title": "小寒",
+    "description": "二十四节气之一，寒气积聚、隆冬将至",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "严寒",
+      "三九",
+      "养生",
+      "保暖"
+    ],
+    "keywords": [
+      "小寒",
+      "二十四节气",
+      "严寒",
+      "三九",
+      "保暖"
+    ],
+    "history": "小寒标志一年中最冷阶段来临的序幕。",
+    "technique": "起居避寒、饮食温补；防冻防病。",
+    "features": "寒冷持久、风寒偏盛。",
+    "funFact": "民谚有“小寒大寒，冷成冰团”。",
+    "media": [],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-08T08:08:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-icicles"
+  },
+  "大寒": {
+    "id": "大寒",
+    "title": "大寒",
+    "description": "二十四节气之一，岁寒之极、冬去春来",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "极寒",
+      "越年",
+      "养生",
+      "迎春"
+    ],
+    "keywords": [
+      "大寒",
+      "二十四节气",
+      "极寒",
+      "迎春",
+      "纳福"
+    ],
+    "history": "大寒承接小寒，古人以备年货、祈岁为要务。",
+    "technique": "温补御寒、调养脾肾；筹备过年。",
+    "features": "严寒至极、年关将近。",
+    "funFact": "有“腊八近、年味浓”的节令趣象。",
+    "media": [],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-08T08:08:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-snowflake"
+  },
+  "社日": {
+    "id": "社日",
+    "title": "社日",
+    "description": "社日为春社与秋社，祭社稷土神、祈五谷丰登的民俗节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "民俗节日",
+      "社稷",
+      "祈年",
+      "农耕",
+      "丰收"
+    ],
+    "keywords": [
+      "社日",
+      "春社",
+      "秋社",
+      "社稷",
+      "祈年",
+      "丰登"
+    ],
+    "history": "源于上古社稷崇拜，春祈播种、秋谢丰收。",
+    "technique": "社坛祭礼、社戏、社饭等民俗活动。",
+    "features": "敬天法地、农耕礼俗浓厚。",
+    "funFact": "多地保留社戏、赛社鼓等民间艺术。",
+    "media": [
+      {
+        "name": "社日.jpg",
+        "type": "image",
+        "size": 129228,
+        "url": "http://localhost:3001/resources/images/2025-08-19T06-53-53_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-19T06:53:56.166Z",
+    "type": "traditionalFestivals",
+    "icon": ""
+  },
+  "雨水": {
+    "id": "雨水",
+    "title": "雨水",
+    "description": "二十四节气之一，降雨增多、万物萌动",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "春季",
+      "降雨",
+      "萌动",
+      "农事"
+    ],
+    "keywords": [
+      "雨水",
+      "二十四节气",
+      "降雨",
+      "春季",
+      "农耕",
+      "萌芽"
+    ],
+    "history": "古人以星象与气候变化划分节气，雨水示万物润泽，利于春耕备耕。",
+    "technique": "顺时养生，宜防寒湿；农事上备耕、修渠、育秧。",
+    "features": "降雨渐增，土壤回暖，作物适时育苗。",
+    "funFact": "民谚有“雨水节到，耕牛动脚”。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-water"
+  },
+  "惊蛰": {
+    "id": "惊蛰",
+    "title": "惊蛰",
+    "description": "二十四节气之一，春雷始鸣、蛰虫始振",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "春季",
+      "春雷",
+      "苏醒",
+      "农事"
+    ],
+    "keywords": [
+      "惊蛰",
+      "春雷",
+      "蛰虫苏醒",
+      "春耕",
+      "二十四节气"
+    ],
+    "history": "以雷启春，古人据自然物候制节，示春耕将始。",
+    "technique": "宜疏肝理气、早睡早起；农事上松土、施肥、整畦。",
+    "features": "气温回升、降水增，万物生机渐显。",
+    "funFact": "民俗有打小人、拜白虎等祈福习惯。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-bolt"
+  },
+  "春分": {
+    "id": "春分",
+    "title": "春分",
+    "description": "二十四节气之一，昼夜等长、平衡和煦",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "昼夜平分",
+      "温和",
+      "春耕",
+      "生长"
+    ],
+    "keywords": [
+      "春分",
+      "二十四节气",
+      "昼夜平分",
+      "春耕",
+      "播种"
+    ],
+    "history": "源自天文分点，古人以春分祭日，重礼天地。",
+    "technique": "宜顺应生发之气，多蔬果；农事上适宜播种、锄草。",
+    "features": "气候均衡、光照适中，利作物均衡生长。",
+    "funFact": "“竖蛋”游戏因昼夜平衡而流行于民间。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-balance-scale"
+  },
+  "谷雨": {
+    "id": "谷雨",
+    "title": "谷雨",
+    "description": "二十四节气之一，雨生百谷、播种正当时",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "春季",
+      "播种",
+      "降雨",
+      "生长"
+    ],
+    "keywords": [
+      "谷雨",
+      "二十四节气",
+      "播种",
+      "春雨",
+      "百谷"
+    ],
+    "history": "古人云“雨生百谷”，此时亦有采茶习俗。",
+    "technique": "宜播种移栽、除草施肥；养生防湿邪。",
+    "features": "雨润大地，作物出苗整齐。",
+    "funFact": "江南有谷雨前后采新茶之俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-seedling"
+  },
+  "立夏": {
+    "id": "立夏",
+    "title": "立夏",
+    "description": "二十四节气之一，万物并秀、夏季之始",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "夏季",
+      "并秀",
+      "生长",
+      "旺盛"
+    ],
+    "keywords": [
+      "立夏",
+      "二十四节气",
+      "夏季开始",
+      "农事",
+      "养生清淡"
+    ],
+    "history": "立夏以物候定节，古有称体重、斗蛋等习俗。",
+    "technique": "饮食宜清淡、增蔬果；农事加强田间管理。",
+    "features": "温度升高、日照增强、作物迅速生长。",
+    "funFact": "民间有立夏吃蛋、斗蛋以祈平安之俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-sun"
+  },
+  "小满": {
+    "id": "小满",
+    "title": "小满",
+    "description": "小满为二十四节气之一，夏熟作物籽粒饱满将熟",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "夏季",
+      "麦熟",
+      "将满",
+      "农事"
+    ],
+    "keywords": [
+      "小满",
+      "二十四节气",
+      "麦类将熟",
+      "水稻管理",
+      "农耕"
+    ],
+    "history": "古籍记物候，小满表征夏熟作物成熟过程。",
+    "technique": "田间管理防倒伏、防虫害；养生防暑湿。",
+    "features": "籽粒渐满、雨热并至。",
+    "funFact": "江南小满时节多有祭车神、祈丰收之俗。",
+    "media": [
+      {
+        "name": "小满.jpg",
+        "type": "image",
+        "size": 165256,
+        "url": "http://localhost:3001/resources/images/2025-08-19T06-51-26_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-19T06:51:27.795Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-seedling"
+  },
+  "芒种": {
+    "id": "芒种",
+    "title": "芒种",
+    "description": "二十四节气之一，麦收稻插、忙于田间",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "麦收",
+      "插秧",
+      "繁忙",
+      "夏季"
+    ],
+    "keywords": [
+      "芒种",
+      "二十四节气",
+      "麦收",
+      "插秧",
+      "农忙"
+    ],
+    "history": "“有芒之种可稼于此”，反映农作节律。",
+    "technique": "收麦、整地、插秧并行；注意高温防护。",
+    "features": "农忙高峰、收种衔接。",
+    "funFact": "江淮一带有送花神、祈风调雨习俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-seedling",
+    "location": "芒种为二十四节气之一，麦收在即、稻作插秧，农事最忙时"
+  },
+  "小暑": {
+    "id": "小暑",
+    "title": "小暑",
+    "description": "二十四节气之一，暑气渐盛、雷雨增多",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "暑热",
+      "雷雨",
+      "纳凉",
+      "养生"
+    ],
+    "keywords": [
+      "小暑",
+      "二十四节气",
+      "暑气",
+      "雷阵雨",
+      "避暑"
+    ],
+    "history": "古人据热度分小暑、大暑，以示暑热进程。",
+    "technique": "清淡饮食、适当午休；农事防高温干热。",
+    "features": "高温来临前奏、对流强降水增多。",
+    "funFact": "江南有食新、食伏面等应时习俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-sun"
+  },
+  "大暑": {
+    "id": "大暑",
+    "title": "大暑",
+    "description": "二十四节气之一，一年最热、雷雨频仍",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "酷热",
+      "雷雨",
+      "防暑",
+      "养生"
+    ],
+    "keywords": [
+      "大暑",
+      "二十四节气",
+      "酷热",
+      "防暑降温",
+      "强对流"
+    ],
+    "history": "古人以物候、气温综合判暑热峰值。",
+    "technique": "防暑降温、补水防晒；农事防涝防风。",
+    "features": "全年最热阶段，湿热并重。",
+    "funFact": "岭南有伏日饮凉茶、祛暑湿习俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-sun"
+  },
+  "立秋": {
+    "id": "立秋",
+    "title": "立秋",
+    "description": "二十四节气之一，凉意初现、万物由盛转收",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "秋季",
+      "转凉",
+      "收获",
+      "养生"
+    ],
+    "keywords": [
+      "立秋",
+      "二十四节气",
+      "秋季开始",
+      "贴秋膘",
+      "收成"
+    ],
+    "history": "古人以四立定季，立秋示丰收将临。",
+    "technique": "起居早卧早起，饮食适度滋润；田管促早熟。",
+    "features": "昼夜温差渐大、作物籽粒充实。",
+    "funFact": "北方民间有“贴秋膘”习俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-leaf"
+  },
+  "处暑": {
+    "id": "处暑",
+    "title": "处暑",
+    "description": "二十四节气之一，暑气止、秋意浓",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "止暑",
+      "秋意",
+      "凉爽",
+      "物候"
+    ],
+    "keywords": [
+      "处暑",
+      "二十四节气",
+      "暑尽",
+      "秋凉",
+      "物候"
+    ],
+    "history": "物候由热转凉，古人以候鸟归徙、雷始收声为证。",
+    "technique": "润燥为主、早睡早起；农事防早霜、促成熟。",
+    "features": "高温消退、昼夜转凉。",
+    "funFact": "江南有“开渔节”等应景活动。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-leaf"
+  },
+  "白露": {
+    "id": "白露",
+    "title": "白露",
+    "description": "二十四节气之一，夜凉露生、秋意渐深",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "露凝",
+      "昼夜温差",
+      "秋凉",
+      "养生"
+    ],
+    "keywords": [
+      "白露",
+      "二十四节气",
+      "露水",
+      "秋凉",
+      "润燥"
+    ],
+    "history": "古人以露之白，象征秋意转深。",
+    "technique": "宜润肺清燥；农事防旱、防早霜。",
+    "features": "清晨露重、空气清爽。",
+    "funFact": "岭南有“白露茶”尝新之俗。",
+    "media": [],
+    "createdAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-water"
+  },
+  "春节": {
+    "id": "春节",
+    "title": "春节",
+    "description": "春节是中国最重要的传统节日，农历新年，象征团圆、希望和新开始",
+    "category": "traditionalFestivals",
+    "tags": [
+      "农历新年",
+      "团圆",
+      "希望",
+      "新开始",
+      "除夕",
+      "拜年",
+      "红包"
+    ],
+    "keywords": [
+      "春节",
+      "农历新年",
+      "团圆",
+      "希望",
+      "新开始",
+      "除夕",
+      "拜年",
+      "红包",
+      "春联",
+      "年画"
+    ],
+    "history": "春节起源于殷商时期，已有4000多年历史。最初是祭祀祖先和神灵的节日，后来演变为庆祝新年的重要节日。",
+    "technique": "春节庆祝活动包括贴春联、放鞭炮、吃年夜饭、守岁、拜年、发红包等传统习俗。",
+    "features": "团圆喜庆，文化内涵丰富，习俗多样，寓意美好，是中华民族最重要的文化符号。",
+    "funFact": "春节是中华民族最重要的传统节日，体现了中国人对家庭团圆和美好生活的向往。春节习俗丰富多彩，各地都有独特的庆祝方式。",
+    "media": [
+      {
+        "name": "春节.jpg",
+        "type": "image",
+        "size": 306183,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-29-43_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-09T17:29:43.872Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-calendar"
+  },
+  "元宵节": {
+    "id": "元宵节",
+    "title": "元宵节",
+    "description": "农历正月十五，吃元宵、赏花灯、猜灯谜的传统节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "正月十五",
+      "元宵",
+      "花灯",
+      "灯谜",
+      "团圆",
+      "喜庆"
+    ],
+    "keywords": [
+      "元宵节",
+      "正月十五",
+      "元宵",
+      "花灯",
+      "灯谜",
+      "团圆",
+      "喜庆",
+      "汤圆"
+    ],
+    "history": "元宵节起源于汉代，最初是祭祀太一神的节日，后来演变为民间庆祝的节日。",
+    "technique": "元宵节庆祝活动包括吃元宵、赏花灯、猜灯谜、舞龙舞狮等传统习俗。",
+    "features": "花灯璀璨，元宵香甜，灯谜有趣，寓意团圆和美好。",
+    "funFact": "元宵节是春节后的第一个重要节日，象征着新年的圆满和美好。各地的花灯制作技艺精湛，体现了中华文化的精致。",
+    "media": [],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-08T06:45:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-lightbulb"
+  },
+  "清明节": {
+    "id": "清明节",
+    "title": "清明节",
+    "description": "农历二十四节气之一，扫墓祭祖、踏青郊游的传统节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "二十四节气",
+      "扫墓",
+      "祭祖",
+      "踏青",
+      "郊游",
+      "慎终追远"
+    ],
+    "keywords": [
+      "清明节",
+      "二十四节气",
+      "扫墓",
+      "祭祖",
+      "踏青",
+      "郊游",
+      "慎终追远",
+      "青团"
+    ],
+    "history": "清明节起源于周代，最初是祭祀祖先的节日，后来与寒食节合并，成为重要的传统节日。",
+    "technique": "清明节活动包括扫墓祭祖、踏青郊游、放风筝、吃青团等传统习俗。",
+    "features": "慎终追远，缅怀先人，亲近自然，寓意生命和希望。",
+    "funFact": "清明节体现了中华民族慎终追远的传统美德，也是亲近自然、感受春天的美好时光。",
+    "media": [],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-08T06:45:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-leaf"
+  },
+  "端午节": {
+    "id": "端午节",
+    "title": "端午节",
+    "description": "农历五月初五，吃粽子、赛龙舟、纪念屈原的传统节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "五月初五",
+      "粽子",
+      "龙舟",
+      "屈原",
+      "艾草",
+      "香囊"
+    ],
+    "keywords": [
+      "端午节",
+      "五月初五",
+      "粽子",
+      "龙舟",
+      "屈原",
+      "艾草",
+      "香囊",
+      "雄黄酒"
+    ],
+    "history": "端午节起源于战国时期，最初是纪念爱国诗人屈原的节日，后来演变为重要的传统节日。",
+    "technique": "端午节活动包括吃粽子、赛龙舟、挂艾草、佩香囊、饮雄黄酒等传统习俗。",
+    "features": "纪念先贤，传承文化，团结协作，寓意爱国和团结。",
+    "funFact": "端午节体现了中华民族的爱国情怀和文化传承，赛龙舟活动展现了团结协作的精神。",
+    "media": [],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-08T06:45:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-ship"
+  },
+  "七夕节": {
+    "id": "七夕节",
+    "title": "七夕节",
+    "description": "农历七月初七，中国情人节，牛郎织女鹊桥相会的浪漫节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "七月初七",
+      "情人节",
+      "牛郎织女",
+      "鹊桥",
+      "浪漫",
+      "爱情"
+    ],
+    "keywords": [
+      "七夕节",
+      "七月初七",
+      "情人节",
+      "牛郎织女",
+      "鹊桥",
+      "浪漫",
+      "爱情",
+      "乞巧"
+    ],
+    "history": "七夕节起源于汉代，最初是女子乞巧的节日，后来演变为中国的情人节。",
+    "technique": "七夕节活动包括乞巧、穿针引线、观星、吃巧果等传统习俗。",
+    "features": "浪漫美好，爱情象征，文化内涵丰富，寓意美好姻缘。",
+    "funFact": "七夕节体现了中华民族对美好爱情的向往，牛郎织女的故事传颂千年，感动无数人。",
+    "media": [],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-08T06:45:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-heart"
+  },
+  "中秋节": {
+    "id": "中秋节",
+    "title": "中秋节",
+    "description": "农历八月十五，吃月饼、赏月、团圆的传统节日",
+    "category": "traditionalFestivals",
+    "tags": [
+      "八月十五",
+      "月饼",
+      "赏月",
+      "团圆",
+      "嫦娥",
+      "玉兔"
+    ],
+    "keywords": [
+      "中秋节",
+      "八月十五",
+      "月饼",
+      "赏月",
+      "团圆",
+      "嫦娥",
+      "玉兔",
+      "桂花"
+    ],
+    "history": "中秋节起源于唐代，最初是祭月的节日，后来演变为重要的团圆节日。",
+    "technique": "中秋节活动包括吃月饼、赏月、祭月、赏桂花等传统习俗。",
+    "features": "团圆美好，月圆人圆，文化内涵丰富，寓意团圆和美好。",
+    "funFact": "中秋节是中华民族最重要的团圆节日之一，体现了中国人对家庭团圆的重视。",
+    "media": [],
+    "createdAt": "2025-08-08T06:45:00.000Z",
+    "updatedAt": "2025-08-08T06:45:00.000Z",
+    "type": "traditionalFestivals",
+    "icon": "fa-moon"
+  }
+}

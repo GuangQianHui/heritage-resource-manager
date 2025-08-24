@@ -1,0 +1,185 @@
+{
+  "version": "1.0.0",
+  "name": "非遗文化资源库",
+  "description": "传统美食、工艺、戏曲等非遗文化资源库",
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "lastUpdated": "2025-08-08T07:30:00.000Z",
+  "structure": {
+    "knowledge": {
+      "path": "knowledge",
+      "description": "知识库 - 存储非遗文化的文字资料、历史背景、制作工艺等",
+      "allowedExtensions": [".json", ".md", ".txt", ".html"],
+      "maxFileSize": "1MB"
+    },
+    "images": {
+      "path": "images",
+      "description": "图片库 - 存储非遗文化相关的图片资源",
+      "allowedExtensions": [".jpg", ".jpeg", ".png", ".gif", ".webp"],
+      "maxFileSize": "10MB",
+      "maxDimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "videos": {
+      "path": "videos",
+      "description": "视频库 - 存储非遗文化相关的视频资源",
+      "allowedExtensions": [".mp4", ".webm", ".ogg", ".mov"],
+      "maxFileSize": "100MB",
+      "maxDuration": 300
+    },
+    "audio": {
+      "path": "audio",
+      "description": "音频库 - 存储非遗文化相关的音频资源",
+      "allowedExtensions": [".mp3", ".wav", ".ogg", ".m4a"],
+      "maxFileSize": "50MB",
+      "maxDuration": 600
+    },
+    "documents": {
+      "path": "documents",
+      "description": "文档库 - 存储非遗文化相关的文档资料",
+      "allowedExtensions": [".pdf", ".doc", ".docx", ".ppt", ".pptx"],
+      "maxFileSize": "20MB"
+    }
+  },
+  "categories": {
+    "traditionalFoods": {
+      "name": "传统美食",
+      "description": "中华传统美食文化",
+      "icon": "fa-utensils",
+      "color": "#DC143C"
+    },
+    "traditionalCrafts": {
+      "name": "传统工艺",
+      "description": "中华传统工艺技术",
+      "icon": "fa-gem",
+      "color": "#FFD700"
+    },
+    "traditionalOpera": {
+      "name": "传统戏曲",
+      "description": "中华传统戏曲艺术",
+      "icon": "fa-mask",
+      "color": "#8B4513"
+    },
+    "traditionalFestivals": {
+      "name": "传统节日",
+      "description": "中华传统节日文化",
+      "icon": "fa-calendar",
+      "color": "#FF6B35"
+    },
+    "traditionalMedicine": {
+      "name": "传统医药",
+      "description": "中华传统医药文化",
+      "icon": "fa-leaf",
+      "color": "#228B22"
+    },
+    "traditionalArchitecture": {
+      "name": "传统建筑",
+      "description": "中华传统建筑艺术",
+      "icon": "fa-building",
+      "color": "#696969"
+    }
+  },
+  "icons": {
+    "traditionalFoods": [
+      {"value": "fa-utensils", "label": "🍽️ 餐具", "description": "传统餐具"},
+      {"value": "fa-fish", "label": "🐟 鱼", "description": "海鲜美食"},
+      {"value": "fa-drumstick-bite", "label": "🍗 鸡腿", "description": "肉类美食"},
+      {"value": "fa-apple-alt", "label": "🍎 苹果", "description": "水果"},
+      {"value": "fa-carrot", "label": "🥕 胡萝卜", "description": "蔬菜"},
+      {"value": "fa-bread-slice", "label": "🍞 面包", "description": "面食"},
+      {"value": "fa-cheese", "label": "🧀 奶酪", "description": "乳制品"},
+      {"value": "fa-egg", "label": "🥚 鸡蛋", "description": "蛋类"},
+      {"value": "fa-pepper-hot", "label": "🌶️ 辣椒", "description": "调味料"},
+      {"value": "fa-mug-hot", "label": "☕ 热饮", "description": "饮品"}
+    ],
+    "traditionalCrafts": [
+      {"value": "fa-gem", "label": "💎 宝石", "description": "珠宝工艺"},
+      {"value": "fa-hammer", "label": "🔨 锤子", "description": "金属工艺"},
+      {"value": "fa-paint-brush", "label": "🖌️ 画笔", "description": "绘画工艺"},
+      {"value": "fa-cut", "label": "✂️ 剪刀", "description": "剪纸工艺"},
+      {"value": "fa-scissors", "label": "✂️ 剪刀", "description": "刺绣工艺"},
+      {"value": "fa-tree", "label": "🌳 树木", "description": "木雕工艺"},
+      {"value": "fa-mountain", "label": "⛰️ 山石", "description": "石雕工艺"},
+      {"value": "fa-fire", "label": "🔥 火焰", "description": "陶瓷工艺"},
+      {"value": "fa-palette", "label": "🎨 调色板", "description": "漆器工艺"},
+      {"value": "fa-crown", "label": "👑 皇冠", "description": "景泰蓝工艺"}
+    ],
+    "traditionalOpera": [
+      {"value": "fa-mask", "label": "🎭 面具", "description": "戏曲面具"},
+      {"value": "fa-music", "label": "🎵 音乐", "description": "戏曲音乐"},
+      {"value": "fa-microphone", "label": "🎤 麦克风", "description": "唱腔"},
+      {"value": "fa-drum", "label": "🥁 鼓", "description": "打击乐器"},
+      {"value": "fa-guitar", "label": "🎸 吉他", "description": "弦乐器"},
+      {"value": "fa-theater-masks", "label": "🎭 戏剧", "description": "戏剧表演"},
+      {"value": "fa-star", "label": "⭐ 明星", "description": "名角"},
+      {"value": "fa-crown", "label": "👑 皇冠", "description": "宫廷戏"},
+      {"value": "fa-heart", "label": "❤️ 爱心", "description": "爱情戏"},
+      {"value": "fa-sword", "label": "⚔️ 剑", "description": "武戏"}
+    ],
+    "traditionalFestivals": [
+      {"value": "fa-calendar", "label": "📅 日历", "description": "传统节日"},
+      {"value": "fa-fire", "label": "🔥 火焰", "description": "春节"},
+      {"value": "fa-moon", "label": "🌙 月亮", "description": "中秋节"},
+      {"value": "fa-ship", "label": "🚢 龙舟", "description": "端午节"},
+      {"value": "fa-lightbulb", "label": "💡 灯笼", "description": "元宵节"},
+      {"value": "fa-heart", "label": "❤️ 爱心", "description": "七夕节"},
+      {"value": "fa-mountain", "label": "⛰️ 山", "description": "重阳节"},
+      {"value": "fa-seedling", "label": "🌱 幼苗", "description": "清明节"},
+      {"value": "fa-snowflake", "label": "❄️ 雪花", "description": "冬至节"},
+      {"value": "fa-sun", "label": "☀️ 太阳", "description": "夏至节"}
+    ],
+    "traditionalMedicine": [
+      {"value": "fa-leaf", "label": "🍃 叶子", "description": "中药材"},
+      {"value": "fa-seedling", "label": "🌱 幼苗", "description": "草药"},
+      {"value": "fa-flask", "label": "🧪 烧瓶", "description": "药方"},
+      {"value": "fa-pills", "label": "💊 药丸", "description": "成药"},
+      {"value": "fa-stethoscope", "label": "🩺 听诊器", "description": "诊断"},
+      {"value": "fa-heartbeat", "label": "💓 心跳", "description": "脉诊"},
+      {"value": "fa-hand-holding-heart", "label": "🤲 手捧心", "description": "推拿"},
+      {"value": "fa-spa", "label": "💆 按摩", "description": "养生"},
+      {"value": "fa-apple-alt", "label": "🍎 苹果", "description": "食疗"},
+      {"value": "fa-mortar-pestle", "label": "🧪 研钵", "description": "制药"}
+    ],
+    "traditionalArchitecture": [
+      {"value": "fa-building", "label": "🏢 建筑", "description": "古建筑"},
+      {"value": "fa-home", "label": "🏠 房屋", "description": "民居"},
+      {"value": "fa-church", "label": "⛪ 教堂", "description": "寺庙"},
+      {"value": "fa-crown", "label": "👑 皇冠", "description": "宫殿"},
+      {"value": "fa-tree", "label": "🌳 树木", "description": "园林"},
+      {"value": "fa-archway", "label": "🏛️ 拱门", "description": "牌坊"},
+      {"value": "fa-bridge", "label": "🌉 桥梁", "description": "古桥"},
+      {"value": "fa-tower-observation", "label": "🗼 塔", "description": "古塔"},
+      {"value": "fa-dragon", "label": "🐉 龙", "description": "龙纹装饰"},
+      {"value": "fa-phoenix", "label": "🦅 凤凰", "description": "凤纹装饰"}
+    ],
+    "common": [
+      {"value": "fa-book", "label": "📚 书籍", "description": "知识"},
+      {"value": "fa-graduation-cap", "label": "🎓 毕业帽", "description": "学习"},
+      {"value": "fa-lightbulb", "label": "💡 灯泡", "description": "创新"},
+      {"value": "fa-history", "label": "📜 历史", "description": "传统"},
+      {"value": "fa-globe", "label": "🌍 地球", "description": "文化"},
+      {"value": "fa-star", "label": "⭐ 星星", "description": "精品"},
+      {"value": "fa-heart", "label": "❤️ 爱心", "description": "喜爱"},
+      {"value": "fa-trophy", "label": "🏆 奖杯", "description": "荣誉"},
+      {"value": "fa-gem", "label": "💎 宝石", "description": "珍贵"},
+      {"value": "fa-crown", "label": "👑 皇冠", "description": "经典"}
+    ]
+  },
+  "tags": {
+    "common": ["历史", "文化", "传统", "工艺", "美食", "艺术", "传承", "创新"],
+    "food": ["宫廷菜", "地方菜", "川菜", "粤菜", "鲁菜", "苏菜", "浙菜", "闽菜", "湘菜", "徽菜"],
+    "craft": ["陶瓷", "刺绣", "剪纸", "木雕", "石雕", "金属工艺", "漆器", "景泰蓝"],
+    "opera": ["京剧", "昆曲", "越剧", "黄梅戏", "豫剧", "川剧", "粤剧", "评剧"],
+    "medicine": ["中药", "针灸", "推拿", "养生", "食疗", "药膳"],
+    "architecture": ["古建筑", "园林", "寺庙", "宫殿", "民居", "牌坊", "桥梁"]
+  },
+  "metadata": {
+    "autoBackup": true,
+    "backupInterval": 24,
+    "compression": true,
+    "thumbnailGeneration": true,
+    "searchIndexing": true,
+    "versionControl": true
+  }
+} 

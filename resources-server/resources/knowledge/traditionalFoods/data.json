@@ -1,0 +1,2308 @@
+{
+  "热干面": {
+    "id": "热干面",
+    "title": "热干面",
+    "description": "将熟面过油放凉，食用前复烫，拌入芝麻酱、酱油、酸豆角与榨菜等小料。",
+    "category": "traditionalFoods",
+    "tags": [
+      "武汉",
+      "面食",
+      "芝麻酱",
+      "早餐"
+    ],
+    "keywords": [
+      "热干面",
+      "武汉小吃",
+      "芝麻酱拌面"
+    ],
+    "history": "起源汉口早点摊，逐渐成为城市名片。",
+    "technique": "面条过油防粘；复烫回温；快速拌匀。",
+    "features": "咸香浓郁、面体弹牙、调料丰富。",
+    "funFact": "常与豆皮、糊汤粉并列武汉早餐三巨头。",
+    "media": [
+      {
+        "name": "热干面.jpg",
+        "type": "image",
+        "size": 144481,
+        "url": "http://localhost:3001/resources/images/2025-08-19T01-23-06__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-24T16:52:42.708Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "将熟面过油放凉，食用前复烫，拌入芝麻酱、酱油、酸豆角与榨菜等小料。"
+  },
+  "肉夹馍": {
+    "id": "肉夹馍",
+    "title": "肉夹馍",
+    "description": "以炭火烤制白吉馍夹入长时间卤炖五花肉或腱子肉，肉香与面香相映成趣。",
+    "category": "traditionalFoods",
+    "tags": [
+      "陕西",
+      "夹馍",
+      "卤味",
+      "街头小吃"
+    ],
+    "keywords": [
+      "肉夹馍",
+      "腊汁肉",
+      "白吉馍"
+    ],
+    "history": "与关中面食文化相伴发展，名气遍及全国。",
+    "technique": "白吉馍烤制；腊汁肉慢卤；现切现夹。",
+    "features": "馍香酥脆、肉香醇厚、多汁不腻。",
+    "funFact": "素食版本以菌菇或土豆替代。",
+    "media": [
+      {
+        "name": "肉夹馍.webp",
+        "type": "image",
+        "size": 20184,
+        "url": "http://localhost:3001/resources/images/2025-08-19T01-16-34__________.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T01:16:36.435Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "炸酱面": {
+    "id": "炸酱面",
+    "title": "炸酱面",
+    "description": "手擀面配以黄瓜、萝卜、豆芽等小料，拌入以黄酱或甜面酱炒制的肉丁炸酱。",
+    "category": "traditionalFoods",
+    "tags": [
+      "北京",
+      "面食",
+      "酱香",
+      "家常"
+    ],
+    "keywords": [
+      "炸酱面",
+      "京味",
+      "黄酱"
+    ],
+    "history": "京城胡同名吃，亦在东北、山东等地有变体。",
+    "technique": "面条手擀；炸酱慢炒出酱油；小料切丝。",
+    "features": "面条筋道、酱香浓郁、清爽小料解腻。",
+    "funFact": "“老北京三样儿”之一常指它。",
+    "media": [
+      {
+        "name": "炸酱面.jpeg",
+        "type": "image",
+        "size": 289631,
+        "url": "http://localhost:3001/resources/images/2025-08-19T03-19-48__________.jpeg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T03:19:50.007Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "刀削面": {
+    "id": "刀削面",
+    "title": "刀削面",
+    "description": "和制硬面团，持刀就坯削入滚水，面叶边厚中薄，入口筋道。",
+    "category": "traditionalFoods",
+    "tags": [
+      "山西",
+      "面食",
+      "现场技艺",
+      "筋道"
+    ],
+    "keywords": [
+      "刀削面",
+      "晋面",
+      "面食"
+    ],
+    "history": "晋商兴盛带动面食传播，刀削技法名闻遐迩。",
+    "technique": "和面醒面；手持面坯；顺势削入锅中；捞出拌卤。",
+    "features": "边缘爽口、中部柔韧，挂卤性好。",
+    "funFact": "比赛项目有“百叶不停刀”。",
+    "media": [
+      {
+        "name": "刀削面.jpg",
+        "type": "image",
+        "size": 192932,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-43-54__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:43:55.173Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "德州扒鸡": {
+    "id": "德州扒鸡",
+    "title": "德州扒鸡",
+    "description": "整鸡经挂卤、油润、扒制等工序处理，成品色泽枣红、酥烂脱骨。",
+    "category": "traditionalFoods",
+    "tags": [
+      "鲁菜",
+      "扒制",
+      "整鸡",
+      "卤味"
+    ],
+    "keywords": [
+      "德州扒鸡",
+      "扒鸡",
+      "鲁中名吃"
+    ],
+    "history": "清末民初名声大噪，成为鲁中特产名片。",
+    "technique": "挂卤入味；油润护色；小火扒制至酥烂。",
+    "features": "皮酥肉烂、香透骨里、冷食亦佳。",
+    "funFact": "常作为旅行伴手礼。",
+    "media": [
+      {
+        "name": "德州扒鸡.webp",
+        "type": "image",
+        "size": 18008,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-42-35_____________.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:42:37.671Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "锅包肉": {
+    "id": "锅包肉",
+    "title": "锅包肉",
+    "description": "猪里脊切片拍粉油炸，复入锅与糖醋卤翻拌挂汁，口感脆嫩酸甜。",
+    "category": "traditionalFoods",
+    "tags": [
+      "东北",
+      "糖醋",
+      "油炸",
+      "家常"
+    ],
+    "keywords": [
+      "锅包肉",
+      "东北菜",
+      "糖醋里脊"
+    ],
+    "history": "出自哈尔滨老字号改良，后风靡东北与全国。",
+    "technique": "拍粉油炸；调糖醋卤；回锅挂汁保持脆感。",
+    "features": "酸甜开胃、外脆里嫩、老少皆宜。",
+    "funFact": "部分做法加入柠檬增清香。",
+    "media": [
+      {
+        "name": "锅包肉.jpg",
+        "type": "image",
+        "size": 1563107,
+        "url": "http://localhost:3001/resources/images/2025-08-19T04-00-09__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T04:00:12.910Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "酸菜鱼": {
+    "id": "酸菜鱼",
+    "title": "酸菜鱼",
+    "description": "以草鱼片入滚汤汆熟，酸菜与泡椒打底，汤体酸辣鲜，鱼片滑嫩。",
+    "category": "traditionalFoods",
+    "tags": [
+      "川渝",
+      "酸辣",
+      "汤菜",
+      "鱼片"
+    ],
+    "keywords": [
+      "酸菜鱼",
+      "泡椒",
+      "酸菜"
+    ],
+    "history": "近现代川渝馆子名品，家常化普及。",
+    "technique": "鱼片滑油；酸菜炒香；入汤汆熟；花椒油提香。",
+    "features": "酸辣醒胃、鱼滑汤鲜。",
+    "funFact": "与“水煮鱼”并称川味“下饭双雄”。",
+    "media": [
+      {
+        "name": "酸菜鱼.jpg",
+        "type": "image",
+        "size": 1757971,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-42-17__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:42:19.465Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "回锅肉": {
+    "id": "回锅肉",
+    "title": "回锅肉",
+    "description": "五花肉先煮后切片，与郫县豆瓣、甜面酱和蒜苗复炒，肥香而不腻。",
+    "category": "traditionalFoods",
+    "tags": [
+      "川菜",
+      "家常",
+      "酱香",
+      "蒜苗"
+    ],
+    "keywords": [
+      "回锅肉",
+      "郫县豆瓣",
+      "蒜苗回锅肉"
+    ],
+    "history": "川西民间“九大碗”之常见菜式之一。",
+    "technique": "白煮肉冷却切片；小火煸油；入酱复炒断生。",
+    "features": "肥香酥软、酱香突出、下饭利器。",
+    "funFact": "部分地区以“青蒜”或“二荆条”搭配。",
+    "media": [
+      {
+        "name": "回锅肉.jpg",
+        "type": "image",
+        "size": 94733,
+        "url": "http://localhost:3001/resources/images/2025-08-19T01-24-54__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T01:24:57.878Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "麻婆豆腐": {
+    "id": "麻婆豆腐",
+    "title": "麻婆豆腐",
+    "description": "嫩豆腐与牛肉末入锅，以郫县豆瓣、花椒与辣椒面调味，口味麻辣鲜香、烫嫩滑口。",
+    "category": "traditionalFoods",
+    "tags": [
+      "川菜",
+      "家常",
+      "麻辣",
+      "豆制品"
+    ],
+    "keywords": [
+      "麻婆豆腐",
+      "郫县豆瓣",
+      "花椒"
+    ],
+    "history": "据传成都陈婆所创，后遍布川渝乃至全国。",
+    "technique": "先煸牛肉末；豆瓣炒红；下豆腐推匀；花椒面提香。",
+    "features": "麻、辣、烫、嫩、香，五感俱备。",
+    "funFact": "“麻婆”为掌故外号，并非贬义。",
+    "media": [
+      {
+        "name": "麻婆豆腐.jpeg",
+        "type": "image",
+        "size": 511004,
+        "url": "http://localhost:3001/resources/images/2025-08-19T03-20-23_____________.jpeg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T03:20:24.033Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "宫保鸡丁": {
+    "id": "宫保鸡丁",
+    "title": "宫保鸡丁",
+    "description": "鸡丁挂糊快炒，加入干辣椒、花椒与花生米，复合味型咸甜微酸，脆香可口。",
+    "category": "traditionalFoods",
+    "tags": [
+      "川菜",
+      "爆炒",
+      "花生",
+      "下饭"
+    ],
+    "keywords": [
+      "宫保鸡丁",
+      "川菜",
+      "花生米"
+    ],
+    "history": "与丁宝桢相关的掌故广为流传，后衍生多地版本。",
+    "technique": "鸡丁腌制挂糊；小火煸香干辣椒；快炒勾芡。",
+    "features": "外酥里嫩、酸甜麻辣平衡。",
+    "funFact": "国外中餐馆“Kung Pao”常见招牌。",
+    "media": [
+      {
+        "name": "宫保鸡丁.jpg",
+        "type": "image",
+        "size": 232430,
+        "url": "http://localhost:3001/resources/images/2025-08-19T03-20-52_____________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T03:20:54.151Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "葱烧海参": {
+    "id": "葱烧海参",
+    "title": "葱烧海参",
+    "description": "发制海参与大葱同焖，加入高汤与酱油糖，收汁入味，重在火候与葱香。",
+    "category": "traditionalFoods",
+    "tags": [
+      "鲁菜",
+      "海参",
+      "焖烧",
+      "高汤"
+    ],
+    "keywords": [
+      "葱烧海参",
+      "鲁菜名品",
+      "大葱"
+    ],
+    "history": "胶东海产配齐鲁葱香，形成经典名菜。",
+    "technique": "海参规范发制；葱段煸香；小火焖烧至入味。",
+    "features": "质地软糯、葱香浓郁、汤汁醇厚。",
+    "funFact": "讲究“葱要炸透不糊、参要软糯不烂”。",
+    "media": [
+      {
+        "name": "葱烧海参.jpg",
+        "type": "image",
+        "size": 1733446,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-40-59_____________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:40:59.989Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "臭鳜鱼": {
+    "id": "臭鳜鱼",
+    "title": "臭鳜鱼",
+    "description": "选鳜鱼短期腌渍发酵，冲洗后油炸定型，配酱料红烧至入味。",
+    "category": "traditionalFoods",
+    "tags": [
+      "徽菜",
+      "发酵",
+      "红烧",
+      "鳜鱼"
+    ],
+    "keywords": [
+      "臭鳜鱼",
+      "徽州菜",
+      "发酵鱼"
+    ],
+    "history": "徽州山区保存运输条件促成独特风味的产生。",
+    "technique": "短期发酵；炸定型；酱烧收汁。",
+    "features": "酱香浓郁、外酥里嫩、回味悠长。",
+    "funFact": "“臭”指发酵风味，并非变质。",
+    "media": [
+      {
+        "name": "臭鳜鱼.jpg",
+        "type": "image",
+        "size": 168321,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-37-56__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:37:57.251Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "西湖醋鱼": {
+    "id": "西湖醋鱼",
+    "title": "西湖醋鱼",
+    "description": "鲜活草鱼入滚水定型，出锅后以热糖醋卤淋身，鱼肉鲜嫩、酸甜适口。",
+    "category": "traditionalFoods",
+    "tags": [
+      "浙菜",
+      "糖醋",
+      "草鱼",
+      "现浇"
+    ],
+    "keywords": [
+      "西湖醋鱼",
+      "宋嫂鱼",
+      "杭州菜"
+    ],
+    "history": "杭州西湖名菜，故事典故丰富。",
+    "technique": "活鱼处理；滚水定型；糖醋卤勾芡现浇。",
+    "features": "鲜、嫩、酸甜和谐，无需重油重盐。",
+    "funFact": "又称“宋嫂鱼羹”的传说相关但做法不同。",
+    "media": [
+      {
+        "name": "西湖醋鱼.jpg",
+        "type": "image",
+        "size": 29808,
+        "url": "http://localhost:3001/resources/images/2025-08-19T01-25-28_____________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T01:25:30.882Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "松鼠鳜鱼": {
+    "id": "松鼠鳜鱼",
+    "title": "松鼠鳜鱼",
+    "description": "整鳜鱼去骨打花炸酥，外脆里嫩，临出锅淋糖醋卤，酸甜可口。",
+    "category": "traditionalFoods",
+    "tags": [
+      "苏菜",
+      "炸制",
+      "糖醋",
+      "刀工"
+    ],
+    "keywords": [
+      "松鼠桂鱼",
+      "糖醋鱼",
+      "苏帮菜"
+    ],
+    "history": "清代姑苏名肆发扬，成宴席名品。",
+    "technique": "去骨打花；裹粉炸酥；糖醋卤勾芡淋面。",
+    "features": "外酥里嫩、酸甜开胃、造型雅致。",
+    "funFact": "热油冲卤时伴随“吱啦”声，似松鼠鸣叫。",
+    "media": [
+      {
+        "name": "松鼠鳜鱼.webp",
+        "type": "image",
+        "size": 17550,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-41-14_____________.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:41:16.044Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "叫花鸡": {
+    "id": "叫花鸡",
+    "title": "叫花鸡",
+    "description": "江南名肴，荷叶泥封慢烤，肉质酥香入味",
+    "category": "traditionalFoods",
+    "tags": [
+      "江南",
+      "焗烤",
+      "荷叶",
+      "整鸡"
+    ],
+    "keywords": [
+      "叫花鸡",
+      "泥烤鸡",
+      "荷叶鸡"
+    ],
+    "history": "相传出自民间“泥封烤”法，后为名厨改良定型。",
+    "technique": "腌鸡入味；荷叶包裹；泥封；慢火焗烤。",
+    "features": "封香入骨、皮香肉嫩、荷叶清香。",
+    "funFact": "拆泥启封自带“开盲盒”仪式感。",
+    "media": [
+      {
+        "name": "叫花鸡.jpg",
+        "type": "image",
+        "size": 285233,
+        "url": "http://localhost:3001/resources/images/2025-08-21T06-29-07__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-21T06:29:09.275Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "江南名肴，荷叶泥封慢烤，肉质酥香入味"
+  },
+  "虾饺": {
+    "id": "虾饺",
+    "title": "虾饺",
+    "description": "以澄粉与小麦淀粉制通透外皮，包入切粒鲜虾与笋，蒸后晶莹剔透。",
+    "category": "traditionalFoods",
+    "tags": [
+      "粤式",
+      "早茶",
+      "蒸点",
+      "澄粉"
+    ],
+    "keywords": [
+      "虾饺",
+      "虾饺皇",
+      "早茶三宝"
+    ],
+    "history": "岭南渔港风味演进为茶楼名点。",
+    "technique": "和澄粉制皮；拌虾胶；捏褶成月牙；旺火速蒸。",
+    "features": "皮薄通透、虾脆甜鲜。",
+    "funFact": "与凤爪、叉烧包并称“早茶三宝”。",
+    "media": [
+      {
+        "name": "虾饺.webp",
+        "type": "image",
+        "size": 10296,
+        "url": "http://localhost:3001/resources/images/2025-08-19T04-02-14_______.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T04:02:16.436Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "肠粉": {
+    "id": "肠粉",
+    "title": "肠粉",
+    "description": "广式经典粉点，米浆蒸成薄皮裹馅，爽滑鲜香",
+    "category": "traditionalFoods",
+    "tags": [
+      "粤式",
+      "粉点",
+      "蒸食",
+      "早茶"
+    ],
+    "keywords": [
+      "肠粉",
+      "广式肠粉",
+      "米浆"
+    ],
+    "history": "源于岭南街头风味，后走入茶楼早茶体系。",
+    "technique": "浸米磨浆；薄摊速蒸；裹馅成卷；淋酱趁热食。",
+    "features": "皮薄透亮、口感爽滑、酱香浓郁。",
+    "funFact": "“牛肉肠”“虾肠”“斋肠”各有拥趸。",
+    "media": [
+      {
+        "name": "肠粉.jpg",
+        "type": "image",
+        "size": 120235,
+        "url": "http://localhost:3001/resources/images/2025-08-21T06-29-39_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-21T06:29:41.833Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "广式经典粉点，米浆蒸成薄皮裹馅，爽滑鲜香"
+  },
+  "生煎": {
+    "id": "生煎",
+    "title": "生煎",
+    "description": "沪上名点，底脆皮薄，内含鲜美汤汁与肉馅",
+    "category": "traditionalFoods",
+    "tags": [
+      "上海",
+      "煎点",
+      "面点",
+      "汤汁"
+    ],
+    "keywords": [
+      "生煎包",
+      "生煎",
+      "上海生煎"
+    ],
+    "history": "20世纪初在上海成名，成为市井经典早餐。",
+    "technique": "包制醒发；平底锅煎制加水焖；收干撒芝麻葱花。",
+    "features": "底脆面香、馅鲜多汁。",
+    "funFact": "常与小馄饨搭配称“生煎小馄饨”。",
+    "media": [
+      {
+        "name": "生煎.webp",
+        "type": "image",
+        "size": 14906,
+        "url": "http://localhost:3001/resources/images/2025-08-24T17-19-55_______.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-24T17:19:58.594Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "沪上名点，底脆皮薄，内含鲜美汤汁与肉馅"
+  },
+  "小笼包": {
+    "id": "小笼包",
+    "title": "小笼包",
+    "description": "以发酵面皮包肉馅与皮冻，蒸后皮薄半透明，提篙不破、轻咬出汤。",
+    "category": "traditionalFoods",
+    "tags": [
+      "江南点心",
+      "蒸点",
+      "汤包",
+      "南翔"
+    ],
+    "keywords": [
+      "小笼包",
+      "汤包",
+      "南翔小笼"
+    ],
+    "history": "清末在江南地区流行，今成上海代表性小吃。",
+    "technique": "和面发酵；皮冻入馅；收口打褶；旺火蒸熟。",
+    "features": "皮薄汁多、鲜香不腻，蘸陈醋姜丝更佳。",
+    "funFact": "“提、捏、移、蘸、啜、咬”六字吃法广为流传。",
+    "media": [
+      {
+        "name": "小笼包.jpg",
+        "type": "image",
+        "size": 613482,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-35-14__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T17:30:00.000Z",
+    "updatedAt": "2025-08-19T07:35:16.760Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "北京烤鸭": {
+    "id": "北京烤鸭",
+    "title": "北京烤鸭",
+    "description": "北京烤鸭精选肥嫩填鸭，经充气晾皮、糖醋水上色、挂炉明火烤制，食时卷薄饼配甜面酱与葱丝黄瓜。",
+    "category": "traditionalFoods",
+    "tags": [
+      "京菜",
+      "挂炉",
+      "明火",
+      "薄饼"
+    ],
+    "keywords": [
+      "北京烤鸭",
+      "挂炉烤",
+      "京味",
+      "甜面酱"
+    ],
+    "history": "源自元明宫廷，清末民初走入民间，形成独特技法与门店文化。",
+    "technique": "充气分离皮肉；风干上色；挂炉果木烤制；片皮分部位装盘。",
+    "features": "外皮酥脆、油而不腻，片皮蘸糖别具风味。",
+    "funFact": "果木多用枣木或梨木，香气独特。",
+    "media": [
+      {
+        "name": "北京烤鸭制作视频.mp4",
+        "type": "video",
+        "size": 40181351,
+        "url": "http://localhost:3001/resources/videos/2025-08-21T02-50-00_________________________.mp4"
+      },
+      {
+        "name": "北京烤鸭.jpg",
+        "type": "image",
+        "size": 214661,
+        "url": "http://localhost:3001/resources/images/2025-08-21T02-04-08_____________.jpg"
+      },
+      {
+        "name": "非遗定胜糕.mp4",
+        "type": "video",
+        "size": 4176433,
+        "url": "http://localhost:3001/resources/videos/2025-08-21T02-50-32________________.mp4"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-21T02:50:36.048Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "北京烤鸭精选肥嫩填鸭，经充气晾皮、糖醋水上色、挂炉明火烤制，食时卷薄饼配甜面酱与葱丝黄瓜。"
+  },
+  "东坡肉": {
+    "id": "东坡肉",
+    "title": "东坡肉",
+    "description": "东坡肉以带皮五花切方块，经煸香、加黄酒酱油与冰糖，小火慢焖至色泽红亮、入口即化。",
+    "category": "traditionalFoods",
+    "tags": [
+      "江南",
+      "红烧",
+      "焖煮",
+      "苏菜"
+    ],
+    "keywords": [
+      "东坡肉",
+      "苏东坡",
+      "五花肉",
+      "红烧"
+    ],
+    "history": "相传与苏东坡有关，后经民间诠释成为家常名菜与筵席名品。",
+    "technique": "焯水除腥；煸香上色；砂锅小火焖至酥烂。",
+    "features": "咸甜适口、肥而不腻、糯而不烂。",
+    "funFact": "常与“东坡肘子”并称苏帮名菜。",
+    "media": [
+      {
+        "name": "东坡肉.png",
+        "type": "image",
+        "size": 599054,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-21-13__________.png"
+      },
+      {
+        "name": "东坡肉制作视频.mp4",
+        "type": "video",
+        "size": 25003436,
+        "url": "http://localhost:3001/resources/videos/2025-08-19T07-00-31______________________.mp4"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-21T02:03:43.351Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "东坡肉以带皮五花切方块，经煸香、加黄酒酱油与冰糖，小火慢焖至色泽红亮、入口即化。"
+  },
+  "佛跳墙": {
+    "id": "佛跳墙",
+    "title": "佛跳墙",
+    "description": "佛跳墙以鲍鱼、海参、花胶、瑶柱、蹄筋、鸽蛋等多味原材置坛，隔水文火久炖，汤浓味厚。",
+    "category": "traditionalFoods",
+    "tags": [
+      "闽菜",
+      "坛炖",
+      "海味",
+      "山珍"
+    ],
+    "keywords": [
+      "佛跳墙",
+      "闽菜名肴",
+      "海参鲍鱼",
+      "坛子菜"
+    ],
+    "history": "清末在福州形成名菜谱系，名贯中外。",
+    "technique": "原材分档处理；砂锅或坛器隔水久炖；火候与次序严谨。",
+    "features": "汤体醇厚、荤香不腻、层次繁复。",
+    "funFact": "“坛启荤香飘四邻，佛闻弃禅跳墙来”得名。",
+    "media": [
+      {
+        "name": "佛跳墙.jpg",
+        "type": "image",
+        "size": 161139,
+        "url": "http://localhost:3001/resources/images/2025-08-09T17-20-45__________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-09T17:20:46.784Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "月饼": {
+    "id": "月饼",
+    "title": "月饼",
+    "description": "月饼为中秋节应景食品，饼皮包裹莲蓉、豆沙、伍仁、蛋黄等馅料烘焙，寓意团圆美满。",
+    "category": "traditionalFoods",
+    "tags": [
+      "中秋",
+      "团圆",
+      "烘焙",
+      "广式",
+      "苏式"
+    ],
+    "keywords": [
+      "月饼",
+      "中秋节",
+      "莲蓉",
+      "蛋黄"
+    ],
+    "history": "唐宋即有雏形，明清广为流行，形成广式、苏式、潮式等流派。",
+    "technique": "制皮制馅；成型压花；上蛋液烘焙；回油静置风味更佳。",
+    "features": "皮馅比例讲究、纹样精美，甜咸兼备。",
+    "funFact": "“花好月圆人团圆”促成赠饼文化。",
+    "media": [],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-09T17:20:20.006Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "粉蒸肉": {
+    "id": "粉蒸肉",
+    "title": "粉蒸肉",
+    "description": "粉蒸肉将五花或排骨腌渍后拌熟米粉入碗，加南瓜或芋头垫底，上笼蒸至软糯酥香。",
+    "category": "traditionalFoods",
+    "tags": [
+      "蒸菜",
+      "米粉",
+      "软糯",
+      "家常"
+    ],
+    "keywords": [
+      "粉蒸肉",
+      "米粉蒸",
+      "南瓜垫底",
+      "芋头粉蒸"
+    ],
+    "history": "源自中原，流播至西南华中各地，口味咸辣甜皆有。",
+    "technique": "炒米制粉；肉类腌渍；装碗压紧；旺火蒸至出油。",
+    "features": "米粉吸汁、软糯香醇、肥而不腻。",
+    "funFact": "以“糯感”与“米香”见长，老少皆宜。",
+    "media": [
+      {
+        "name": "粉蒸肉.png",
+        "type": "image",
+        "size": 1075119,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-33-42__________.png"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-19T07:33:43.680Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "四川火锅": {
+    "id": "四川火锅",
+    "title": "四川火锅",
+    "description": "四川火锅以牛油为基搭配郫县豆瓣、花椒与香辛料熬制，讲究麻辣鲜香、热烈奔放，食材广泛。",
+    "category": "traditionalFoods",
+    "tags": [
+      "川渝",
+      "麻辣",
+      "牛油",
+      "郫县豆瓣"
+    ],
+    "keywords": [
+      "四川火锅",
+      "牛油锅",
+      "麻辣鲜香",
+      "九宫格"
+    ],
+    "history": "由江边纤夫与码头饮食发展，近现代规范化并走向全国。",
+    "technique": "炒制底料；牛油小火熬香；清汤与红汤并行可选鸳鸯锅。",
+    "features": "麻辣厚重、涮烫即食、社交属性强。",
+    "funFact": "花椒讲究“青麻红辣”，口感立体。",
+    "media": [
+      {
+        "name": "四川火锅.jpg",
+        "type": "image",
+        "size": 184129,
+        "url": "http://localhost:3001/resources/images/2025-08-19T04-05-07_____________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-19T04:05:09.037Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "羊肉泡馍": {
+    "id": "羊肉泡馍",
+    "title": "羊肉泡馍",
+    "description": "关中风味代表，白吉馍掰入浓郁羊汤，佐以辣子蒜苗",
+    "category": "traditionalFoods",
+    "tags": [
+      "西安",
+      "关中",
+      "汤馍",
+      "清汤"
+    ],
+    "keywords": [
+      "羊肉泡馍",
+      "关中风味",
+      "白吉馍"
+    ],
+    "history": "源于长安古都饮食传统，形成独特“掰馍”食俗。",
+    "technique": "羊骨慢熬清汤去腥；白吉馍烤制；食前现掰入碗，浇汤复煮。",
+    "features": "汤清味厚、馍香筋道、暖胃耐饥。",
+    "funFact": "“掰得越细越入味”，是老饕心得。",
+    "media": [
+      {
+        "name": "羊肉泡馍.jpg",
+        "type": "image",
+        "size": 191297,
+        "url": "http://localhost:3001/resources/images/2025-08-21T06-44-10_____________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-21T06:44:13.924Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "关中风味代表，白吉馍掰入浓郁羊汤，佐以辣子蒜苗"
+  },
+  "叉烧包": {
+    "id": "叉烧包",
+    "title": "叉烧包",
+    "description": "粤式点心代表，松软面皮包甜咸叉烧馅",
+    "category": "traditionalFoods",
+    "tags": [
+      "粤点",
+      "早茶",
+      "蒸点",
+      "发面"
+    ],
+    "keywords": [
+      "叉烧包",
+      "广式点心",
+      "早茶"
+    ],
+    "history": "随粤式早茶文化兴盛而家喻户晓，港澳与岭南地区尤盛。",
+    "technique": "和面发酵；熬制叉烧馅；包入褶口；旺火蒸熟。",
+    "features": "皮裂“笑口”、甜咸适中、汁香浓郁。",
+    "funFact": "“一盅两件”常把叉烧包列为“两件”之一。",
+    "media": [],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-09T16:05:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "腊八粥": {
+    "id": "腊八粥",
+    "title": "腊八粥",
+    "description": "腊八粥以多种谷物、豆类与果干合熬，香甜软糯，寓意祈福纳祥、五谷丰登。",
+    "category": "traditionalFoods",
+    "tags": [
+      "腊八",
+      "合谷",
+      "祈福",
+      "杂粮"
+    ],
+    "keywords": [
+      "腊八粥",
+      "腊八节",
+      "杂粮粥"
+    ],
+    "history": "民间腊祭习俗与佛门“腊八粥”相互影响而成。",
+    "technique": "谷豆提前浸泡；大火煮开小火慢熬；临出锅调味点缀。",
+    "features": "营养多元、暖胃滋补，甜香可口。",
+    "funFact": "“腊八到，年来到”，喝粥象征辞旧迎新。",
+    "media": [
+      {
+        "name": "腊八粥.webp",
+        "type": "image",
+        "size": 18210,
+        "url": "http://localhost:3001/resources/images/2025-08-19T07-36-01__________.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-19T07:36:02.274Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "年糕": {
+    "id": "年糕",
+    "title": "年糕",
+    "description": "新年常食糯米糕点，寓意年年高",
+    "category": "traditionalFoods",
+    "tags": [
+      "春节",
+      "糯米",
+      "节庆",
+      "吉祥"
+    ],
+    "keywords": [
+      "年糕",
+      "年年高",
+      "糯米糕"
+    ],
+    "history": "古代“年祀”用祭品演变而来，寓意步步高升。",
+    "technique": "浸米磨浆；入模蒸透；冷却定型；可切片再烹。",
+    "features": "软糯韧性、可塑性强，甜咸百搭。",
+    "funFact": "江南有红糖年糕，东北有黄米年糕。",
+    "media": [],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-09T16:05:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "汤圆": {
+    "id": "汤圆",
+    "title": "汤圆",
+    "description": "元宵佳节常食的糯米点心，寓意团团圆圆",
+    "category": "traditionalFoods",
+    "tags": [
+      "元宵",
+      "糯米",
+      "甜点",
+      "团圆"
+    ],
+    "keywords": [
+      "汤圆",
+      "元宵节",
+      "糯米粉",
+      "芝麻馅"
+    ],
+    "history": "宋元时期即盛行，南方称汤圆，北方称元宵，工艺有别。",
+    "technique": "和粉制坯；包馅搓圆；沸水下锅小火煮至浮起。",
+    "features": "软糯香甜、汤清润口，亦有咸味款。",
+    "funFact": "“圆”形寓意团圆与圆满。",
+    "media": [
+      {
+        "name": "汤圆.webp",
+        "type": "image",
+        "size": 7676,
+        "url": "http://localhost:3001/resources/images/2025-08-24T17-23-52_______.webp"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-24T17:23:53.896Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "元宵佳节常食的糯米点心，寓意团团圆圆"
+  },
+  "粽子": {
+    "id": "粽子",
+    "title": "粽子",
+    "description": "端午节传统食品，以糯米配各类馅料裹以粽叶蒸制",
+    "category": "traditionalFoods",
+    "tags": [
+      "端午",
+      "糯米",
+      "民俗节令",
+      "叶香"
+    ],
+    "keywords": [
+      "粽子",
+      "端午节",
+      "糯米",
+      "箬叶"
+    ],
+    "history": "传说为纪念屈原投江所投粽，后成端午习俗，各地风味迥异。",
+    "technique": "浸糯米与叶；拌料包裹成形并扎紧；旺火煮或高压蒸至糯米软糯入味。",
+    "features": "叶香渗米、软糯香粘，甜咸流派并存。",
+    "funFact": "南咸北甜并非绝对，不同地域口味十分多样。",
+    "media": [
+      {
+        "name": "粽子.jpg",
+        "type": "image",
+        "size": 711447,
+        "url": "http://localhost:3001/resources/images/2025-08-24T17-43-45_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-24T17:43:49.560Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "端午节传统食品，以糯米配各类馅料裹以粽叶蒸制"
+  },
+  "饺子": {
+    "id": "饺子",
+    "title": "饺子",
+    "description": "中国北方年节代表食物，寓意更岁交子、团圆吉祥",
+    "category": "traditionalFoods",
+    "tags": [
+      "年节",
+      "北方面食",
+      "冬至",
+      "春节",
+      "团圆"
+    ],
+    "keywords": [
+      "饺子",
+      "水饺",
+      "更岁交子",
+      "北方年俗"
+    ],
+    "history": "饺子起源可追溯至东汉张仲景“娇耳”，后演变为年节食品，象征团圆与招财。",
+    "technique": "和面醒面；拌馅调味；擀皮包馅；水煮点冷水至浮起或蒸、煎至熟透。",
+    "features": "皮薄馅多、鲜香多汁，口味与馅料地域差异丰富。",
+    "funFact": "“交子”与“饺子”谐音，寓意岁末更替。",
+    "media": [
+      {
+        "name": "饺子.jpg",
+        "type": "image",
+        "size": 1156083,
+        "url": "http://localhost:3001/resources/images/2025-08-24T17-23-24_______.jpg"
+      }
+    ],
+    "createdAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-24T17:23:28.391Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "location": "饺子为中国北方重要面食，多在冬至与春节食用，寓意更岁交子、团圆吉祥。以面皮包裹肉馅或素馅，水煮、蒸或煎制皆可。",
+    "content": "中国北方年节代表食物，寓意更岁交子、团圆吉祥"
+  },
+  "兰州拉面": {
+    "id": "兰州拉面",
+    "title": "兰州拉面",
+    "description": "手工拉制的面条配以清汤、牛肉片、萝卜丝、香菜等，汤清面白，口感筋道",
+    "category": "traditionalFoods",
+    "tags": [
+      "甘肃",
+      "面食",
+      "拉面",
+      "清汤",
+      "牛肉"
+    ],
+    "keywords": [
+      "兰州拉面",
+      "手工拉面",
+      "清汤牛肉面",
+      "甘肃美食"
+    ],
+    "history": "起源于清代兰州，是西北地区最具代表性的面食之一。",
+    "technique": "手工拉制面条；熬制清汤；现切牛肉片。",
+    "features": "面条筋道、汤清味美、配料丰富。",
+    "funFact": "兰州拉面讲究'一清二白三红四绿五黄'的搭配。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "担担面": {
+    "id": "担担面",
+    "title": "担担面",
+    "description": "四川特色面食，配以花生碎、葱花、辣椒油等调料，麻辣鲜香",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "面食",
+      "麻辣",
+      "担担面"
+    ],
+    "keywords": [
+      "担担面",
+      "四川小吃",
+      "麻辣面食",
+      "花生碎"
+    ],
+    "history": "起源于清代四川，因挑担叫卖而得名。",
+    "technique": "面条煮熟；调制麻辣调料；撒上花生碎。",
+    "features": "麻辣鲜香、面条筋道、调料丰富。",
+    "funFact": "担担面是四川最具代表性的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "阳春面": {
+    "id": "阳春面",
+    "title": "阳春面",
+    "description": "江南地区传统面食，清汤配以葱花、香菜，简单清淡",
+    "category": "traditionalFoods",
+    "tags": [
+      "江南",
+      "面食",
+      "清汤",
+      "简单"
+    ],
+    "keywords": [
+      "阳春面",
+      "江南美食",
+      "清汤面",
+      "简单面食"
+    ],
+    "history": "起源于江南地区，是当地最基础的面食。",
+    "technique": "面条煮熟；熬制清汤；撒上葱花。",
+    "features": "清淡爽口、面条筋道、汤清味美。",
+    "funFact": "阳春面因其简单清淡而得名。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "臊子面": {
+    "id": "臊子面",
+    "title": "臊子面",
+    "description": "陕西特色面食，配以肉臊子、蔬菜丁等，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "陕西",
+      "面食",
+      "臊子",
+      "浓郁"
+    ],
+    "keywords": [
+      "臊子面",
+      "陕西美食",
+      "肉臊子",
+      "浓郁面食"
+    ],
+    "history": "起源于陕西，是当地最具代表性的面食之一。",
+    "technique": "制作肉臊子；面条煮熟；浇上臊子。",
+    "features": "味道浓郁、面条筋道、臊子丰富。",
+    "funFact": "臊子面是陕西人最爱的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "油泼面": {
+    "id": "油泼面",
+    "title": "油泼面",
+    "description": "陕西特色面食，热油泼在面条上，配以辣椒、葱花等",
+    "category": "traditionalFoods",
+    "tags": [
+      "陕西",
+      "面食",
+      "油泼",
+      "辣椒"
+    ],
+    "keywords": [
+      "油泼面",
+      "陕西美食",
+      "热油泼面",
+      "辣椒面"
+    ],
+    "history": "起源于陕西，是当地最具特色的面食之一。",
+    "technique": "面条煮熟；热油泼面；撒上辣椒。",
+    "features": "香辣可口、面条筋道、油香浓郁。",
+    "funFact": "油泼面是陕西最具代表性的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "biangbiang面": {
+    "id": "biangbiang面",
+    "title": "biangbiang面",
+    "description": "陕西特色宽面，手工制作，配以各种调料，口感独特",
+    "category": "traditionalFoods",
+    "tags": [
+      "陕西",
+      "面食",
+      "宽面",
+      "手工"
+    ],
+    "keywords": [
+      "biangbiang面",
+      "陕西美食",
+      "宽面",
+      "手工面"
+    ],
+    "history": "起源于陕西，因制作时发出的声音而得名。",
+    "technique": "手工制作宽面；煮熟；配以调料。",
+    "features": "面条宽厚、口感独特、味道浓郁。",
+    "funFact": "biangbiang面是陕西最具特色的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "重庆小面": {
+    "id": "重庆小面",
+    "title": "重庆小面",
+    "description": "重庆特色面食，麻辣鲜香，配以各种调料",
+    "category": "traditionalFoods",
+    "tags": [
+      "重庆",
+      "面食",
+      "麻辣",
+      "小面"
+    ],
+    "keywords": [
+      "重庆小面",
+      "重庆美食",
+      "麻辣面食",
+      "小面"
+    ],
+    "history": "起源于重庆，是当地最具代表性的面食之一。",
+    "technique": "面条煮熟；调制麻辣调料；配以各种配料。",
+    "features": "麻辣鲜香、面条筋道、调料丰富。",
+    "funFact": "重庆小面是重庆人最爱的早餐之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "河南烩面": {
+    "id": "河南烩面",
+    "title": "河南烩面",
+    "description": "河南特色面食，配以羊肉、蔬菜等，汤浓味美",
+    "category": "traditionalFoods",
+    "tags": [
+      "河南",
+      "面食",
+      "烩面",
+      "羊肉"
+    ],
+    "keywords": [
+      "河南烩面",
+      "河南美食",
+      "羊肉烩面",
+      "浓汤面"
+    ],
+    "history": "起源于河南，是当地最具代表性的面食之一。",
+    "technique": "熬制羊肉汤；面条煮熟；配以蔬菜。",
+    "features": "汤浓味美、面条筋道、配料丰富。",
+    "funFact": "河南烩面是河南最具代表性的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "山西刀削面": {
+    "id": "山西刀削面",
+    "title": "山西刀削面",
+    "description": "山西特色面食，用刀削制面条，配以各种调料",
+    "category": "traditionalFoods",
+    "tags": [
+      "山西",
+      "面食",
+      "刀削",
+      "手工"
+    ],
+    "keywords": [
+      "山西刀削面",
+      "山西美食",
+      "刀削面",
+      "手工面"
+    ],
+    "history": "起源于山西，是当地最具代表性的面食之一。",
+    "technique": "用刀削制面条；煮熟；配以调料。",
+    "features": "面条独特、口感筋道、味道浓郁。",
+    "funFact": "山西刀削面是山西最具代表性的面食之一。",
+    "media": [
+      {
+        "name": "山西刀削面.jpg",
+        "type": "image",
+        "size": 378701,
+        "url": "http://localhost:3001/resources/images/2025-08-24T17-18-35________________.jpg"
+      }
+    ],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-24T17:18:38.265Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "山西特色面食，用刀削制面条，配以各种调料"
+  },
+  "新疆拉条子": {
+    "id": "新疆拉条子",
+    "title": "新疆拉条子",
+    "description": "新疆特色面食，手工拉制，配以羊肉、蔬菜等",
+    "category": "traditionalFoods",
+    "tags": [
+      "新疆",
+      "面食",
+      "拉条子",
+      "羊肉"
+    ],
+    "keywords": [
+      "新疆拉条子",
+      "新疆美食",
+      "拉条子",
+      "羊肉面"
+    ],
+    "history": "起源于新疆，是当地最具代表性的面食之一。",
+    "technique": "手工拉制面条；配以羊肉；煮熟。",
+    "features": "面条筋道、羊肉鲜美、味道浓郁。",
+    "funFact": "新疆拉条子是新疆最具代表性的面食之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "红烧肉": {
+    "id": "红烧肉",
+    "title": "红烧肉",
+    "description": "中国传统名菜，五花肉经过红烧工艺制作，肥而不腻，入口即化",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "五花肉",
+      "红烧",
+      "肥而不腻"
+    ],
+    "keywords": [
+      "红烧肉",
+      "传统名菜",
+      "五花肉",
+      "红烧工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "五花肉切块；焯水去腥；红烧入味。",
+    "features": "肥而不腻、入口即化、味道浓郁。",
+    "funFact": "红烧肉是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "糖醋里脊": {
+    "id": "糖醋里脊",
+    "title": "糖醋里脊",
+    "description": "中国传统名菜，里脊肉经过糖醋工艺制作，酸甜可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "里脊肉",
+      "糖醋",
+      "酸甜"
+    ],
+    "keywords": [
+      "糖醋里脊",
+      "传统名菜",
+      "里脊肉",
+      "糖醋工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "里脊肉切条；腌制入味；糖醋烹制。",
+    "features": "酸甜可口、外酥内嫩、味道浓郁。",
+    "funFact": "糖醋里脊是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "鱼香肉丝": {
+    "id": "鱼香肉丝",
+    "title": "鱼香肉丝",
+    "description": "四川传统名菜，肉丝配以鱼香调料，味道独特",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "传统名菜",
+      "肉丝",
+      "鱼香"
+    ],
+    "keywords": [
+      "鱼香肉丝",
+      "四川名菜",
+      "肉丝",
+      "鱼香调料"
+    ],
+    "history": "起源于四川，是当地最具代表性的传统名菜之一。",
+    "technique": "肉丝切条；调制鱼香调料；快速翻炒。",
+    "features": "味道独特、肉丝嫩滑、调料丰富。",
+    "funFact": "鱼香肉丝是四川最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "水煮鱼": {
+    "id": "水煮鱼",
+    "title": "水煮鱼",
+    "description": "四川传统名菜，鲜鱼片配以麻辣调料，麻辣鲜香",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "传统名菜",
+      "鲜鱼",
+      "麻辣"
+    ],
+    "keywords": [
+      "水煮鱼",
+      "四川名菜",
+      "鲜鱼片",
+      "麻辣调料"
+    ],
+    "history": "起源于四川，是当地最具代表性的传统名菜之一。",
+    "technique": "鱼片切片；调制麻辣调料；水煮入味。",
+    "features": "麻辣鲜香、鱼片嫩滑、味道浓郁。",
+    "funFact": "水煮鱼是四川最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "辣子鸡": {
+    "id": "辣子鸡",
+    "title": "辣子鸡",
+    "description": "四川传统名菜，鸡块配以辣椒，麻辣鲜香",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "传统名菜",
+      "鸡块",
+      "麻辣"
+    ],
+    "keywords": [
+      "辣子鸡",
+      "四川名菜",
+      "鸡块",
+      "辣椒"
+    ],
+    "history": "起源于四川，是当地最具代表性的传统名菜之一。",
+    "technique": "鸡块切块；腌制入味；辣椒爆炒。",
+    "features": "麻辣鲜香、鸡块嫩滑、味道浓郁。",
+    "funFact": "辣子鸡是四川最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "白切鸡": {
+    "id": "白切鸡",
+    "title": "白切鸡",
+    "description": "广东传统名菜，整鸡白切，配以姜葱调料，清淡鲜美",
+    "category": "traditionalFoods",
+    "tags": [
+      "广东",
+      "传统名菜",
+      "白切鸡",
+      "清淡"
+    ],
+    "keywords": [
+      "白切鸡",
+      "广东名菜",
+      "整鸡",
+      "姜葱调料"
+    ],
+    "history": "起源于广东，是当地最具代表性的传统名菜之一。",
+    "technique": "整鸡处理；白切制作；调制姜葱调料。",
+    "features": "清淡鲜美、鸡肉嫩滑、味道清爽。",
+    "funFact": "白切鸡是广东最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "烧鹅": {
+    "id": "烧鹅",
+    "title": "烧鹅",
+    "description": "广东传统名菜，整鹅烧制，皮脆肉嫩，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "广东",
+      "传统名菜",
+      "烧鹅",
+      "皮脆肉嫩"
+    ],
+    "keywords": [
+      "烧鹅",
+      "广东名菜",
+      "整鹅",
+      "烧制工艺"
+    ],
+    "history": "起源于广东，是当地最具代表性的传统名菜之一。",
+    "technique": "整鹅处理；腌制入味；烧制工艺。",
+    "features": "皮脆肉嫩、味道浓郁、香气四溢。",
+    "funFact": "烧鹅是广东最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "叉烧": {
+    "id": "叉烧",
+    "title": "叉烧",
+    "description": "广东传统名菜，猪肉叉烧，甜咸适中，味道独特",
+    "category": "traditionalFoods",
+    "tags": [
+      "广东",
+      "传统名菜",
+      "叉烧",
+      "甜咸"
+    ],
+    "keywords": [
+      "叉烧",
+      "广东名菜",
+      "猪肉",
+      "叉烧工艺"
+    ],
+    "history": "起源于广东，是当地最具代表性的传统名菜之一。",
+    "technique": "猪肉处理；腌制入味；叉烧工艺。",
+    "features": "甜咸适中、味道独特、香气四溢。",
+    "funFact": "叉烧是广东最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "烤鸭": {
+    "id": "烤鸭",
+    "title": "烤鸭",
+    "description": "北京传统名菜，整鸭烤制，皮脆肉嫩，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "北京",
+      "传统名菜",
+      "烤鸭",
+      "皮脆肉嫩"
+    ],
+    "keywords": [
+      "烤鸭",
+      "北京名菜",
+      "整鸭",
+      "烤制工艺"
+    ],
+    "history": "起源于北京，是当地最具代表性的传统名菜之一。",
+    "technique": "整鸭处理；腌制入味；烤制工艺。",
+    "features": "皮脆肉嫩、味道浓郁、香气四溢。",
+    "funFact": "烤鸭是北京最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "盐水鸭": {
+    "id": "盐水鸭",
+    "title": "盐水鸭",
+    "description": "南京传统名菜，整鸭盐水腌制，清淡鲜美",
+    "category": "traditionalFoods",
+    "tags": [
+      "南京",
+      "传统名菜",
+      "盐水鸭",
+      "清淡"
+    ],
+    "keywords": [
+      "盐水鸭",
+      "南京名菜",
+      "整鸭",
+      "盐水腌制"
+    ],
+    "history": "起源于南京，是当地最具代表性的传统名菜之一。",
+    "technique": "整鸭处理；盐水腌制；煮熟入味。",
+    "features": "清淡鲜美、鸭肉嫩滑、味道清爽。",
+    "funFact": "盐水鸭是南京最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "糖醋排骨": {
+    "id": "糖醋排骨",
+    "title": "糖醋排骨",
+    "description": "中国传统名菜，排骨经过糖醋工艺制作，酸甜可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "排骨",
+      "糖醋",
+      "酸甜"
+    ],
+    "keywords": [
+      "糖醋排骨",
+      "传统名菜",
+      "排骨",
+      "糖醋工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "排骨切段；腌制入味；糖醋烹制。",
+    "features": "酸甜可口、排骨嫩滑、味道浓郁。",
+    "funFact": "糖醋排骨是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "红烧狮子头": {
+    "id": "红烧狮子头",
+    "title": "红烧狮子头",
+    "description": "江苏传统名菜，肉丸红烧，肥而不腻，入口即化",
+    "category": "traditionalFoods",
+    "tags": [
+      "江苏",
+      "传统名菜",
+      "肉丸",
+      "红烧"
+    ],
+    "keywords": [
+      "红烧狮子头",
+      "江苏名菜",
+      "肉丸",
+      "红烧工艺"
+    ],
+    "history": "起源于江苏，是当地最具代表性的传统名菜之一。",
+    "technique": "肉馅调制；制作肉丸；红烧入味。",
+    "features": "肥而不腻、入口即化、味道浓郁。",
+    "funFact": "红烧狮子头是江苏最具代表性的传统名菜之一。",
+    "media": [
+      {
+        "name": "红烧狮子头.jpeg",
+        "type": "image",
+        "size": 694491,
+        "url": "http://localhost:3001/resources/images/2025-08-21T09-28-39________________.jpeg"
+      }
+    ],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-21T13:34:44.803Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils",
+    "content": "江苏传统名菜，肉丸红烧，肥而不腻，入口即化"
+  },
+  "清蒸鲈鱼": {
+    "id": "清蒸鲈鱼",
+    "description": "广东传统名菜，鲈鱼清蒸，清淡鲜美",
+    "category": "traditionalFoods",
+    "tags": [
+      "广东",
+      "传统名菜",
+      "鲈鱼",
+      "清蒸"
+    ],
+    "keywords": [
+      "清蒸鲈鱼",
+      "广东名菜",
+      "鲈鱼",
+      "清蒸工艺"
+    ],
+    "history": "起源于广东，是当地最具代表性的传统名菜之一。",
+    "technique": "鲈鱼处理；清蒸制作；调制调料。",
+    "features": "清淡鲜美、鱼肉嫩滑、味道清爽。",
+    "funFact": "清蒸鲈鱼是广东最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "红烧鲤鱼": {
+    "id": "红烧鲤鱼",
+    "title": "红烧鲤鱼",
+    "description": "中国传统名菜，鲤鱼红烧，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "鲤鱼",
+      "红烧",
+      "浓郁"
+    ],
+    "keywords": [
+      "红烧鲤鱼",
+      "传统名菜",
+      "鲤鱼",
+      "红烧工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "鲤鱼处理；红烧制作；入味。",
+    "features": "味道浓郁、鱼肉鲜美、香气四溢。",
+    "funFact": "红烧鲤鱼是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "糖醋鱼": {
+    "id": "糖醋鱼",
+    "title": "糖醋鱼",
+    "description": "中国传统名菜，鱼经过糖醋工艺制作，酸甜可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "鱼",
+      "糖醋",
+      "酸甜"
+    ],
+    "keywords": [
+      "糖醋鱼",
+      "传统名菜",
+      "鱼",
+      "糖醋工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "鱼处理；糖醋烹制；入味。",
+    "features": "酸甜可口、鱼肉鲜美、味道浓郁。",
+    "funFact": "糖醋鱼是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "清炒时蔬": {
+    "id": "清炒时蔬",
+    "title": "清炒时蔬",
+    "description": "中国传统名菜，时令蔬菜清炒，清淡爽口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "时蔬",
+      "清炒",
+      "清淡"
+    ],
+    "keywords": [
+      "清炒时蔬",
+      "传统名菜",
+      "时令蔬菜",
+      "清炒工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "时蔬处理；清炒制作；调味。",
+    "features": "清淡爽口、蔬菜新鲜、营养丰富。",
+    "funFact": "清炒时蔬是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "地三鲜": {
+    "id": "地三鲜",
+    "title": "地三鲜",
+    "description": "东北传统名菜，茄子、土豆、青椒炒制，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "东北",
+      "传统名菜",
+      "茄子",
+      "土豆"
+    ],
+    "keywords": [
+      "地三鲜",
+      "东北名菜",
+      "茄子土豆青椒",
+      "炒制"
+    ],
+    "history": "起源于东北，是当地最具代表性的传统名菜之一。",
+    "technique": "茄子、土豆、青椒切块；炒制；调味。",
+    "features": "味道浓郁、蔬菜新鲜、营养丰富。",
+    "funFact": "地三鲜是东北最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "小鸡炖蘑菇": {
+    "id": "小鸡炖蘑菇",
+    "title": "小鸡炖蘑菇",
+    "description": "东北传统名菜，小鸡配以蘑菇炖制，味道鲜美",
+    "category": "traditionalFoods",
+    "tags": [
+      "东北",
+      "传统名菜",
+      "小鸡",
+      "蘑菇"
+    ],
+    "keywords": [
+      "小鸡炖蘑菇",
+      "东北名菜",
+      "小鸡",
+      "蘑菇炖制"
+    ],
+    "history": "起源于东北，是当地最具代表性的传统名菜之一。",
+    "technique": "小鸡处理；蘑菇处理；炖制入味。",
+    "features": "味道鲜美、鸡肉嫩滑、蘑菇香浓。",
+    "funFact": "小鸡炖蘑菇是东北最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "猪肉炖粉条": {
+    "id": "猪肉炖粉条",
+    "title": "猪肉炖粉条",
+    "description": "东北传统名菜，猪肉配以粉条炖制，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "东北",
+      "传统名菜",
+      "猪肉",
+      "粉条"
+    ],
+    "keywords": [
+      "猪肉炖粉条",
+      "东北名菜",
+      "猪肉",
+      "粉条炖制"
+    ],
+    "history": "起源于东北，是当地最具代表性的传统名菜之一。",
+    "technique": "猪肉处理；粉条处理；炖制入味。",
+    "features": "味道浓郁、猪肉鲜美、粉条滑嫩。",
+    "funFact": "猪肉炖粉条是东北最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "酸菜白肉": {
+    "id": "酸菜白肉",
+    "title": "酸菜白肉",
+    "description": "东北传统名菜，白肉配以酸菜炖制，酸辣开胃",
+    "category": "traditionalFoods",
+    "tags": [
+      "东北",
+      "传统名菜",
+      "白肉",
+      "酸菜"
+    ],
+    "keywords": [
+      "酸菜白肉",
+      "东北名菜",
+      "白肉",
+      "酸菜炖制"
+    ],
+    "history": "起源于东北，是当地最具代表性的传统名菜之一。",
+    "technique": "白肉处理；酸菜处理；炖制入味。",
+    "features": "酸辣开胃、白肉肥而不腻、味道浓郁。",
+    "funFact": "酸菜白肉是东北最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "红烧茄子": {
+    "id": "红烧茄子",
+    "title": "红烧茄子",
+    "description": "中国传统名菜，茄子红烧，味道浓郁",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "茄子",
+      "红烧",
+      "浓郁"
+    ],
+    "keywords": [
+      "红烧茄子",
+      "传统名菜",
+      "茄子",
+      "红烧工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "茄子处理；红烧制作；入味。",
+    "features": "味道浓郁、茄子软糯、香气四溢。",
+    "funFact": "红烧茄子是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "鱼香茄子": {
+    "id": "鱼香茄子",
+    "title": "鱼香茄子",
+    "description": "四川传统名菜，茄子配以鱼香调料，味道独特",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "传统名菜",
+      "茄子",
+      "鱼香"
+    ],
+    "keywords": [
+      "鱼香茄子",
+      "四川名菜",
+      "茄子",
+      "鱼香调料"
+    ],
+    "history": "起源于四川，是当地最具代表性的传统名菜之一。",
+    "technique": "茄子处理；调制鱼香调料；快速翻炒。",
+    "features": "味道独特、茄子软糯、调料丰富。",
+    "funFact": "鱼香茄子是四川最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "干煸豆角": {
+    "id": "干煸豆角",
+    "title": "干煸豆角",
+    "description": "四川传统名菜，豆角干煸，麻辣鲜香",
+    "category": "traditionalFoods",
+    "tags": [
+      "四川",
+      "传统名菜",
+      "豆角",
+      "干煸"
+    ],
+    "keywords": [
+      "干煸豆角",
+      "四川名菜",
+      "豆角",
+      "干煸工艺"
+    ],
+    "history": "起源于四川，是当地最具代表性的传统名菜之一。",
+    "technique": "豆角处理；干煸制作；麻辣调味。",
+    "features": "麻辣鲜香、豆角脆嫩、味道浓郁。",
+    "funFact": "干煸豆角是四川最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "蒜蓉西兰花": {
+    "id": "蒜蓉西兰花",
+    "title": "蒜蓉西兰花",
+    "description": "中国传统名菜，西兰花配以蒜蓉，清淡爽口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "西兰花",
+      "蒜蓉",
+      "清淡"
+    ],
+    "keywords": [
+      "蒜蓉西兰花",
+      "传统名菜",
+      "西兰花",
+      "蒜蓉"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "西兰花处理；蒜蓉制作；炒制调味。",
+    "features": "清淡爽口、西兰花新鲜、营养丰富。",
+    "funFact": "蒜蓉西兰花是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "白灼菜心": {
+    "id": "白灼菜心",
+    "title": "白灼菜心",
+    "description": "广东传统名菜，菜心白灼，清淡鲜美",
+    "category": "traditionalFoods",
+    "tags": [
+      "广东",
+      "传统名菜",
+      "菜心",
+      "白灼"
+    ],
+    "keywords": [
+      "白灼菜心",
+      "广东名菜",
+      "菜心",
+      "白灼工艺"
+    ],
+    "history": "起源于广东，是当地最具代表性的传统名菜之一。",
+    "technique": "菜心处理；白灼制作；调制调料。",
+    "features": "清淡鲜美、菜心嫩滑、味道清爽。",
+    "funFact": "白灼菜心是广东最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "蒸蛋羹": {
+    "id": "蒸蛋羹",
+    "title": "蒸蛋羹",
+    "description": "中国传统名菜，鸡蛋蒸制，嫩滑爽口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "鸡蛋",
+      "蒸制",
+      "嫩滑"
+    ],
+    "keywords": [
+      "蒸蛋羹",
+      "传统名菜",
+      "鸡蛋",
+      "蒸制工艺"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "鸡蛋打散；加水调制；蒸制。",
+    "features": "嫩滑爽口、营养丰富、味道清淡。",
+    "funFact": "蒸蛋羹是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "番茄炒蛋": {
+    "id": "番茄炒蛋",
+    "title": "番茄炒蛋",
+    "description": "中国传统名菜，番茄配以鸡蛋炒制，酸甜可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "番茄",
+      "鸡蛋",
+      "酸甜"
+    ],
+    "keywords": [
+      "番茄炒蛋",
+      "传统名菜",
+      "番茄",
+      "鸡蛋炒制"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "番茄切块；鸡蛋打散；炒制调味。",
+    "features": "酸甜可口、营养丰富、味道浓郁。",
+    "funFact": "番茄炒蛋是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "韭菜炒蛋": {
+    "id": "韭菜炒蛋",
+    "title": "韭菜炒蛋",
+    "description": "中国传统名菜，韭菜配以鸡蛋炒制，香气四溢",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "韭菜",
+      "鸡蛋",
+      "香气"
+    ],
+    "keywords": [
+      "韭菜炒蛋",
+      "传统名菜",
+      "韭菜",
+      "鸡蛋炒制"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "韭菜切段；鸡蛋打散；炒制调味。",
+    "features": "香气四溢、营养丰富、味道浓郁。",
+    "funFact": "韭菜炒蛋是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "青椒炒蛋": {
+    "id": "青椒炒蛋",
+    "title": "青椒炒蛋",
+    "description": "中国传统名菜，青椒配以鸡蛋炒制，清爽可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "青椒",
+      "鸡蛋",
+      "清爽"
+    ],
+    "keywords": [
+      "青椒炒蛋",
+      "传统名菜",
+      "青椒",
+      "鸡蛋炒制"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "青椒切丝；鸡蛋打散；炒制调味。",
+    "features": "清爽可口、营养丰富、味道浓郁。",
+    "funFact": "青椒炒蛋是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "葱花炒蛋": {
+    "id": "葱花炒蛋",
+    "title": "葱花炒蛋",
+    "description": "中国传统名菜，葱花配以鸡蛋炒制，香气四溢",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "葱花",
+      "鸡蛋",
+      "香气"
+    ],
+    "keywords": [
+      "葱花炒蛋",
+      "传统名菜",
+      "葱花",
+      "鸡蛋炒制"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "葱花切碎；鸡蛋打散；炒制调味。",
+    "features": "香气四溢、营养丰富、味道浓郁。",
+    "funFact": "葱花炒蛋是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "蛋炒饭": {
+    "id": "蛋炒饭",
+    "title": "蛋炒饭",
+    "description": "中国传统名菜，米饭配以鸡蛋炒制，香气四溢",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "米饭",
+      "鸡蛋",
+      "炒制"
+    ],
+    "keywords": [
+      "蛋炒饭",
+      "传统名菜",
+      "米饭",
+      "鸡蛋炒制"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "米饭准备；鸡蛋打散；炒制调味。",
+    "features": "香气四溢、营养丰富、味道浓郁。",
+    "funFact": "蛋炒饭是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "扬州炒饭": {
+    "id": "扬州炒饭",
+    "title": "扬州炒饭",
+    "description": "江苏传统名菜，米饭配以各种配料炒制，味道丰富",
+    "category": "traditionalFoods",
+    "tags": [
+      "江苏",
+      "传统名菜",
+      "米饭",
+      "炒制"
+    ],
+    "keywords": [
+      "扬州炒饭",
+      "江苏名菜",
+      "米饭",
+      "各种配料"
+    ],
+    "history": "起源于江苏扬州，是当地最具代表性的传统名菜之一。",
+    "technique": "米饭准备；各种配料处理；炒制调味。",
+    "features": "味道丰富、营养丰富、香气四溢。",
+    "funFact": "扬州炒饭是江苏最具代表性的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "蛋花汤": {
+    "id": "蛋花汤",
+    "title": "蛋花汤",
+    "description": "中国传统名菜，鸡蛋打散入汤，嫩滑爽口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "鸡蛋",
+      "汤品",
+      "嫩滑"
+    ],
+    "keywords": [
+      "蛋花汤",
+      "传统名菜",
+      "鸡蛋",
+      "汤品"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "鸡蛋打散；入汤；调味。",
+    "features": "嫩滑爽口、营养丰富、味道清淡。",
+    "funFact": "蛋花汤是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "紫菜蛋花汤": {
+    "id": "紫菜蛋花汤",
+    "title": "紫菜蛋花汤",
+    "description": "中国传统名菜，紫菜配以蛋花汤，营养丰富",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "紫菜",
+      "蛋花汤",
+      "营养"
+    ],
+    "keywords": [
+      "紫菜蛋花汤",
+      "传统名菜",
+      "紫菜",
+      "蛋花汤"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "紫菜处理；蛋花汤制作；调味。",
+    "features": "营养丰富、味道鲜美、香气四溢。",
+    "funFact": "紫菜蛋花汤是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  },
+  "番茄蛋花汤": {
+    "id": "番茄蛋花汤",
+    "title": "番茄蛋花汤",
+    "description": "中国传统名菜，番茄配以蛋花汤，酸甜可口",
+    "category": "traditionalFoods",
+    "tags": [
+      "传统名菜",
+      "番茄",
+      "蛋花汤",
+      "酸甜"
+    ],
+    "keywords": [
+      "番茄蛋花汤",
+      "传统名菜",
+      "番茄",
+      "蛋花汤"
+    ],
+    "history": "起源于古代，是中国最具代表性的传统名菜之一。",
+    "technique": "番茄处理；蛋花汤制作；调味。",
+    "features": "酸甜可口、营养丰富、味道鲜美。",
+    "funFact": "番茄蛋花汤是中国人最爱的传统名菜之一。",
+    "media": [],
+    "createdAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "type": "traditionalFoods",
+    "icon": "fa-utensils"
+  }
+}
