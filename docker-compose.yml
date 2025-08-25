@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  # 主应用服务
+  heritage-app:
+    build: .
+    container_name: heritage-main-server
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - RESOURCE_SERVER_URL=http://heritage-resource-server:3001
+    volumes:
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+    depends_on:
+      - heritage-resource-server
+    restart: unless-stopped
+    networks:
+      - heritage-network
+
+  # 资源服务器
+  heritage-resource-server:
+    build:
+      context: ./resources-server
+      dockerfile: Dockerfile
+    container_name: heritage-resource-server
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    volumes:
+      - ./resources-server/resources:/app/resources
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - heritage-network
+
+  # Nginx反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: heritage-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - heritage-app
+      - heritage-resource-server
+    restart: unless-stopped
+    networks:
+      - heritage-network
+
+networks:
+  heritage-network:
+    driver: bridge
