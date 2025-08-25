@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 非遗文化传承智能体助手 - 简化部署脚本（无Nginx）- 优化版
-# 支持动态IP获取，多服务器部署，优化静态文件服务
+# 非遗文化传承智能体助手 - 本地部署脚本（跳过GitHub下载）
+# 适用于已有代码的服务器
 
 set -e
 
@@ -72,89 +72,30 @@ get_server_info() {
     export PUBLIC_IP PRIVATE_IP INSTANCE_ID ZONE
 }
 
-# 更新系统
-update_system() {
-    log_info "更新系统包..."
-    sudo apt update && sudo apt upgrade -y
-}
-
-# 安装基础工具
-install_dependencies() {
-    log_info "安装基础工具..."
-    sudo apt install -y curl wget git unzip software-properties-common apt-transport-https ca-certificates gnupg lsb-release build-essential
-}
-
-# 安装Node.js 18.x
-install_nodejs() {
-    log_info "安装Node.js 18.x..."
+# 检查应用目录
+check_app_directory() {
+    APP_DIR="/opt/heritage-app"
     
-    # 检查是否已安装
-    if command -v node &> /dev/null; then
-        NODE_VERSION=$(node --version)
-        log_info "Node.js已安装: $NODE_VERSION"
-        return
+    if [ ! -d "$APP_DIR" ]; then
+        log_error "应用目录不存在: $APP_DIR"
+        log_info "请先运行完整的部署脚本或手动创建目录"
+        exit 1
     fi
     
-    curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    
-    # 验证Node.js安装
-    NODE_VERSION=$(node --version)
-    NPM_VERSION=$(npm --version)
-    log_success "Node.js版本: $NODE_VERSION"
-    log_success "npm版本: $NPM_VERSION"
-}
-
-# 安装PM2进程管理器
-install_pm2() {
-    log_info "安装PM2进程管理器..."
-    
-    if command -v pm2 &> /dev/null; then
-        log_info "PM2已安装"
-        return
+    if [ ! -f "$APP_DIR/package.json" ]; then
+        log_error "应用目录中缺少package.json文件"
+        log_info "请确保应用代码已正确下载"
+        exit 1
     fi
     
-    sudo npm install -g pm2
-    
-    # 验证安装
-    PM2_VERSION=$(pm2 --version)
-    log_success "PM2安装完成: $PM2_VERSION"
-}
-
-# 配置防火墙
-configure_firewall() {
-    log_info "配置防火墙..."
-    sudo ufw allow ssh
-    sudo ufw allow 3000
-    sudo ufw allow 3001
-    sudo ufw --force enable
-    log_success "防火墙配置完成"
-}
-
-# 创建应用目录
-create_app_directory() {
-    APP_DIR="/
-    /heritage-app"
-    log_info "创建应用目录: $APP_DIR"
-    sudo mkdir -p $APP_DIR
-    sudo chown $USER:$USER $APP_DIR
+    log_success "应用目录检查通过: $APP_DIR"
     export APP_DIR
 }
 
-# 下载应用代码
-download_application() {
-    log_info "下载应用代码..."
-    
-    cd $APP_DIR
-    
-    # 清理旧文件
-    rm -rf *
-    
-    # 从GitHub下载最新代码
-    git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
-    
-    # 安装依赖
+# 安装依赖
+install_dependencies() {
     log_info "安装主应用依赖..."
+    cd $APP_DIR
     npm install
     
     log_info "安装资源服务器依赖..."
@@ -162,12 +103,14 @@ download_application() {
     npm install
     cd ..
     
-    log_success "应用代码下载完成"
+    log_success "依赖安装完成"
 }
 
 # 创建环境配置文件
 create_env_config() {
     log_info "创建环境配置文件..."
+    
+    cd $APP_DIR
     
     # 主应用环境配置
     cat > .env << EOF
@@ -213,114 +156,11 @@ EOF
     log_success "环境配置文件创建完成"
 }
 
-# 创建优化的服务器配置
-create_optimized_configs() {
-    log_info "创建优化的服务器配置..."
-    
-    # 创建主应用配置文件
-    cat > server-config.js << EOF
-// 主应用优化配置
-const os = require('os');
-
-module.exports = {
-    // 服务器信息
-    serverInfo: {
-        publicIP: process.env.PUBLIC_IP || '$PUBLIC_IP',
-        privateIP: process.env.PRIVATE_IP || '$PRIVATE_IP',
-        instanceId: process.env.INSTANCE_ID || '$INSTANCE_ID',
-        zone: process.env.ZONE || '$ZONE',
-        hostname: os.hostname(),
-        platform: os.platform(),
-        arch: os.arch(),
-        cpus: os.cpus().length,
-        memory: Math.round(os.totalmem() / 1024 / 1024 / 1024) + 'GB'
-    },
-    
-    // 性能优化
-    performance: {
-        maxOldSpaceSize: 1024,
-        gcInterval: 30000,
-        requestTimeout: 30000,
-        uploadTimeout: 300000
-    },
-    
-    // 安全配置
-    security: {
-        corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : [
-            'http://$PUBLIC_IP:3000',
-            'http://$PRIVATE_IP:3000',
-            'http://localhost:3000',
-            'http://127.0.0.1:3000'
-        ],
-        rateLimit: {
-            windowMs: 15 * 60 * 1000,
-            max: 500
-        }
-    }
-};
-EOF
-
-    # 创建资源服务器配置文件
-    cat > resources-server/server-config.js << EOF
-// 资源服务器优化配置
-const os = require('os');
-
-module.exports = {
-    // 服务器信息
-    serverInfo: {
-        publicIP: process.env.PUBLIC_IP || '$PUBLIC_IP',
-        privateIP: process.env.PRIVATE_IP || '$PRIVATE_IP',
-        instanceId: process.env.INSTANCE_ID || '$INSTANCE_ID',
-        zone: process.env.ZONE || '$ZONE',
-        hostname: os.hostname(),
-        platform: os.platform(),
-        arch: os.arch(),
-        cpus: os.cpus().length,
-        memory: Math.round(os.totalmem() / 1024 / 1024 / 1024) + 'GB'
-    },
-    
-    // 性能优化
-    performance: {
-        maxOldSpaceSize: 1024,
-        gcInterval: 30000,
-        requestTimeout: 30000,
-        uploadTimeout: 300000,
-        compressionLevel: 6
-    },
-    
-    // 安全配置
-    security: {
-        corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : [
-            'http://$PUBLIC_IP:3000',
-            'http://$PRIVATE_IP:3000',
-            'http://localhost:3000',
-            'http://127.0.0.1:3000',
-            'http://$PUBLIC_IP:3001',
-            'http://$PRIVATE_IP:3001'
-        ],
-        rateLimit: {
-            windowMs: 15 * 60 * 1000,
-            max: 500,
-            strictMax: 100
-        }
-    },
-    
-    // 文件配置
-    files: {
-        staticPath: process.env.STATIC_FILE_PATH || './resources',
-        uploadPath: process.env.UPLOAD_PATH || './uploads',
-        maxFileSize: process.env.MAX_FILE_SIZE || '100mb',
-        allowedTypes: ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp3', 'mp4', 'wav', 'pdf', 'doc', 'docx']
-    }
-};
-EOF
-
-    log_success "优化配置文件创建完成"
-}
-
 # 创建必要的目录
 create_directories() {
     log_info "创建必要的目录..."
+    cd $APP_DIR
+    
     mkdir -p logs uploads
     mkdir -p resources-server/resources/{images,videos,audio,documents}
     mkdir -p resources-server/uploads
@@ -336,6 +176,8 @@ create_directories() {
 # 创建PM2配置文件
 create_pm2_config() {
     log_info "创建PM2配置文件..."
+    cd $APP_DIR
+    
     cat > ecosystem.config.js << EOF
 module.exports = {
   apps: [
@@ -390,81 +232,38 @@ module.exports = {
 EOF
 }
 
-# 启动应用
-start_application() {
-    log_info "启动应用..."
+# 重启应用
+restart_application() {
+    log_info "重启应用..."
+    cd $APP_DIR
+    
+    # 停止当前应用
+    pm2 stop heritage-main-server heritage-resource-server 2>/dev/null || true
+    pm2 delete heritage-main-server heritage-resource-server 2>/dev/null || true
+    
+    # 等待进程完全停止
+    sleep 3
+    
+    # 重新启动应用
     pm2 start ecosystem.config.js
     
     # 保存PM2配置
     pm2 save
     
-    # 设置PM2开机自启
-    pm2 startup
+    # 等待应用启动
+    sleep 5
     
-    log_success "应用启动完成"
-}
-
-# 创建系统服务文件
-create_system_service() {
-    log_info "创建系统服务文件..."
-    sudo tee /etc/systemd/system/heritage-app.service > /dev/null << EOF
-[Unit]
-Description=Heritage Resource Manager
-After=network.target
-
-[Service]
-Type=forking
-User=$USER
-WorkingDirectory=$APP_DIR
-ExecStart=/usr/bin/pm2 start ecosystem.config.js
-ExecReload=/usr/bin/pm2 reload ecosystem.config.js
-ExecStop=/usr/bin/pm2 stop ecosystem.config.js
-Restart=on-failure
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-    # 重新加载systemd并启用服务
-    sudo systemctl daemon-reload
-    sudo systemctl enable heritage-app.service
+    # 检查应用状态
+    pm2 status
     
-    log_success "系统服务创建完成"
+    log_success "应用重启完成"
 }
 
 # 创建管理脚本
 create_management_scripts() {
-    # 创建更新脚本
-    log_info "创建更新脚本..."
-    cat > update.sh << 'EOF'
-#!/bin/bash
-echo "🔄 开始更新应用..."
-
-# 停止服务
-pm2 stop heritage-main-server heritage-resource-server
-
-# 备份当前配置
-cp .env .env.backup
-cp resources-server/.env resources-server/.env.backup
-
-# 拉取最新代码
-git pull origin main
-
-# 恢复配置
-cp .env.backup .env
-cp resources-server/.env.backup resources-server/.env
-
-# 安装依赖
-npm install
-cd resources-server && npm install && cd ..
-
-# 重启服务
-pm2 start ecosystem.config.js
-
-echo "✅ 更新完成"
-EOF
-
+    log_info "创建管理脚本..."
+    cd $APP_DIR
+    
     # 创建状态检查脚本
     cat > status.sh << 'EOF'
 #!/bin/bash
@@ -566,14 +365,14 @@ checkHealth();
 EOF
 
     # 给脚本执行权限
-    chmod +x update.sh status.sh logs.sh restart.sh
+    chmod +x status.sh logs.sh restart.sh
     
     log_success "管理脚本创建完成"
 }
 
 # 显示部署信息
 show_deployment_info() {
-    log_success "🎉 部署完成！"
+    log_success "🎉 本地部署完成！"
     echo
     echo "📋 部署信息:"
     echo "  应用目录: $APP_DIR"
@@ -591,7 +390,6 @@ show_deployment_info() {
     echo "  查看状态: ./status.sh"
     echo "  查看日志: ./logs.sh [main|resource|all]"
     echo "  重启应用: ./restart.sh"
-    echo "  更新应用: ./update.sh"
     echo "  健康检查: node health-check.js"
     echo
     echo "📝 注意事项:"
@@ -599,38 +397,25 @@ show_deployment_info() {
     echo "  2. 如需使用域名，请配置DNS解析到 $PUBLIC_IP"
     echo "  3. 建议配置SSL证书以支持HTTPS访问"
     echo "  4. 定期备份数据和配置文件"
-    echo
-    echo "🔒 安全建议:"
-    echo "  1. 确保防火墙已启用（脚本已配置）"
-    echo "  2. 定期更新系统和应用"
-    echo "  3. 监控应用日志"
-    echo "  4. 考虑配置SSL证书"
 }
 
 # 主函数
 main() {
-    echo "🚀 开始部署非遗文化传承智能体助手（简化版）..."
+    echo "🚀 开始本地部署非遗文化传承智能体助手..."
     echo "=================================="
     
     get_server_info
-    update_system
+    check_app_directory
     install_dependencies
-    install_nodejs
-    install_pm2
-    configure_firewall
-    create_app_directory
-    download_application
     create_env_config
-    create_optimized_configs
     create_directories
     create_pm2_config
-    start_application
-    create_system_service
+    restart_application
     create_management_scripts
     show_deployment_info
     
     echo "=================================="
-    log_success "简化部署脚本执行完成！"
+    log_success "本地部署脚本执行完成！"
 }
 
 # 执行主函数

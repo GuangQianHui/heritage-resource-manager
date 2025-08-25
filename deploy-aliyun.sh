@@ -233,8 +233,8 @@ create_env_config() {
 NODE_ENV=production
 PORT=3000
 
-# 资源服务器配置
-RESOURCE_SERVER_URL=http://$PRIVATE_IP:3001
+# 资源服务器配置 - 使用公网IP确保前端可以访问
+RESOURCE_SERVER_URL=http://$PUBLIC_IP:3001
 RESOURCE_SERVER_MODULAR=false
 
 # 服务器信息
@@ -243,8 +243,8 @@ PRIVATE_IP=$PRIVATE_IP
 INSTANCE_ID=$INSTANCE_ID
 ZONE=$ZONE
 
-# 安全配置
-CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PRIVATE_IP:3000,http://localhost:3000,http://127.0.0.1:3000
+# 安全配置 - 主要使用公网IP
+CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000
 EOF
 
     # 资源服务器环境配置
@@ -259,8 +259,8 @@ PRIVATE_IP=$PRIVATE_IP
 INSTANCE_ID=$INSTANCE_ID
 ZONE=$ZONE
 
-# CORS配置 - 支持动态IP
-CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PRIVATE_IP:3000,http://localhost:3000,http://127.0.0.1:3000,http://$PUBLIC_IP:3001,http://$PRIVATE_IP:3001
+# CORS配置 - 主要使用公网IP，确保前端可以访问
+CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000
 
 # 静态文件配置
 STATIC_FILE_PATH=./resources

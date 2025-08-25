@@ -77,10 +77,10 @@ update_env_config() {
         cp .env .env.old
         
         # 更新CORS配置
-        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PRIVATE_IP:3000,http://localhost:3000,http://127.0.0.1:3000|g" .env
+        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000|g" .env
         
-        # 更新资源服务器URL
-        sed -i "s|RESOURCE_SERVER_URL=.*|RESOURCE_SERVER_URL=http://$PRIVATE_IP:3001|g" .env
+        # 更新资源服务器URL - 使用公网IP确保前端可以访问
+        sed -i "s|RESOURCE_SERVER_URL=.*|RESOURCE_SERVER_URL=http://$PUBLIC_IP:3001|g" .env
         
         # 添加服务器信息
         if ! grep -q "PUBLIC_IP=" .env; then
@@ -98,8 +98,8 @@ update_env_config() {
         # 备份原配置
         cp resources-server/.env resources-server/.env.old
         
-        # 更新CORS配置
-        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PRIVATE_IP:3000,http://localhost:3000,http://127.0.0.1:3000,http://$PUBLIC_IP:3001,http://$PRIVATE_IP:3001|g" resources-server/.env
+        # 更新CORS配置 - 主要使用公网IP
+        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000|g" resources-server/.env
         
         # 添加服务器信息
         if ! grep -q "PUBLIC_IP=" resources-server/.env; then
