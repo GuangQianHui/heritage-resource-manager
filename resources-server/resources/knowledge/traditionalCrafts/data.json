@@ -31,7 +31,7 @@
         "name": "剪纸.webp",
         "type": "image",
         "size": 30824,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-08T01-55-17_______.webp"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-08T01-55-17_______.webp"
       }
     ],
     "category": "traditionalCrafts",
@@ -70,7 +70,7 @@
         "name": "丝绸.jpg",
         "type": "image",
         "size": 385742,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-08T01-54-38_______.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-08T01-54-38_______.jpg"
       }
     ],
     "category": "traditionalCrafts",
@@ -108,13 +108,13 @@
         "name": "石雕.png",
         "type": "image",
         "size": 1220433,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-07T08-02-34_______.png"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-07T08-02-34_______.png"
       },
       {
         "name": "石雕.png",
         "type": "image",
         "size": 0,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-07T08-02-34_______.png"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-07T08-02-34_______.png"
       }
     ],
     "createdAt": "2025-08-05T16:07:41.833Z",
@@ -149,7 +149,7 @@
         "name": "景泰蓝.jpg",
         "type": "image",
         "size": 903465,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-07T07-55-19__________.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-07T07-55-19__________.jpg"
       }
     ],
     "createdAt": "2025-08-05T16:11:23.461Z",
@@ -184,7 +184,7 @@
         "name": "木雕.jpg",
         "type": "image",
         "size": 392795,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-07T07-43-25_______.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-07T07-43-25_______.jpg"
       }
     ],
     "createdAt": "2025-08-05T16:11:39.274Z",
@@ -222,7 +222,7 @@
         "name": "扎染.jpg",
         "type": "image",
         "size": 334503,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-05T12-34-10_______.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-05T12-34-10_______.jpg"
       }
     ],
     "category": "traditionalCrafts",
@@ -519,7 +519,7 @@
         "name": "年画.jpg",
         "type": "image",
         "size": 261295,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-08T01-56-02_______.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-08T01-56-02_______.jpg"
       }
     ],
     "category": "traditionalCrafts",
@@ -1230,7 +1230,7 @@
         "name": "沙画.jpg",
         "type": "image",
         "size": 374817,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-19T01-31-16_______.jpg"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-19T01-31-16_______.jpg"
       }
     ],
     "category": "traditionalCrafts",
@@ -1333,7 +1333,7 @@
         "name": "剪纸.webp",
         "type": "image",
         "size": 30824,
-        "url": "http://192.168.203.1:3001/resources/images/2025-08-19T01-30-27_______.webp"
+        "url": "http://121.40.185.158:3001/resources/images/2025-08-19T01-30-27_______.webp"
       }
     ],
     "category": "traditionalCrafts",
