@@ -36,7 +36,7 @@
         "name": "京剧.jpg",
         "type": "image",
         "size": 1702162,
-        "url": "http://localhost:3001/resources/images/2025-08-03T21-25-43_______.jpg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-03T21-25-43_______.jpg"
       }
     ]
   },
@@ -76,7 +76,7 @@
         "name": "昆曲.jpg",
         "type": "image",
         "size": 62307,
-        "url": "http://localhost:3001/resources/images/2025-08-03T23-45-18_______.jpg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-03T23-45-18_______.jpg"
       }
     ]
   },
@@ -1631,7 +1631,7 @@
         "name": "山西中路梆子.jpg",
         "type": "image",
         "size": 199091,
-        "url": "http://localhost:3001/resources/images/2025-08-25T01-01-24___________________.jpg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-25T01-01-24___________________.jpg"
       }
     ],
     "createdAt": "2025-08-08T07:10:00.000Z",
@@ -1673,7 +1673,7 @@
         "name": "陕西秦腔.jpeg",
         "type": "image",
         "size": 421385,
-        "url": "http://localhost:3001/resources/images/2025-08-25T01-02-18_____________.jpeg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-25T01-02-18_____________.jpeg"
       }
     ],
     "createdAt": "2025-08-08T07:10:00.000Z",
@@ -1715,7 +1715,7 @@
         "name": "甘肃秦腔.jpg",
         "type": "image",
         "size": 270707,
-        "url": "http://localhost:3001/resources/images/2025-08-25T01-03-07_____________.jpg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-25T01-03-07_____________.jpg"
       }
     ],
     "createdAt": "2025-08-08T07:10:00.000Z",
@@ -1757,7 +1757,7 @@
         "name": "青海秦腔.webp",
         "type": "image",
         "size": 17528,
-        "url": "http://localhost:3001/resources/images/2025-08-25T01-06-16_____________.webp"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-25T01-06-16_____________.webp"
       }
     ],
     "createdAt": "2025-08-08T07:10:00.000Z",
@@ -2071,7 +2071,7 @@
         "name": "福建高甲戏.jpg",
         "type": "image",
         "size": 270433,
-        "url": "http://localhost:3001/resources/images/2025-08-24T17-54-42________________.jpg"
+        "url": "http://192.168.203.1:3001/resources/images/2025-08-24T17-54-42________________.jpg"
       }
     ],
     "createdAt": "2025-08-08T07:10:00.000Z",

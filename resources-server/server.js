@@ -20,6 +20,43 @@ const io = socketIo(server, {
     }
 });
 
+// 动态获取服务器信息
+const getServerInfo = () => {
+    const os = require('os');
+    return {
+        publicIP: process.env.PUBLIC_IP || 'localhost',
+        privateIP: process.env.PRIVATE_IP || '127.0.0.1',
+        instanceId: process.env.INSTANCE_ID || 'unknown',
+        zone: process.env.ZONE || 'unknown',
+        hostname: os.hostname(),
+        platform: os.platform(),
+        arch: os.arch(),
+        cpus: os.cpus().length,
+        memory: Math.round(os.totalmem() / 1024 / 1024 / 1024) + 'GB'
+    };
+};
+
+// 动态CORS配置
+const getCorsOrigins = () => {
+    const serverInfo = getServerInfo();
+    const defaultOrigins = [
+        `http://${serverInfo.publicIP}:3000`,
+        `http://${serverInfo.privateIP}:3000`,
+        `http://${serverInfo.publicIP}:3001`,
+        `http://${serverInfo.privateIP}:3001`,
+        'http://localhost:3000',
+        'http://127.0.0.1:3000',
+        'http://localhost:3001',
+        'http://127.0.0.1:3001'
+    ];
+    
+    if (process.env.CORS_ORIGINS) {
+        return process.env.CORS_ORIGINS.split(',').concat(defaultOrigins);
+    }
+    
+    return defaultOrigins;
+};
+
 // 安全中间件
 app.use(helmet({
     contentSecurityPolicy: false,
@@ -58,7 +95,7 @@ app.use('/api/', limiter); // 其他API使用宽松限制
 
 // CORS配置
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://127.0.0.1:8080', 'http://localhost:3001'],
+    origin: getCorsOrigins(),
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Cache-Control', 'Pragma', 'If-Modified-Since', 'If-None-Match']
@@ -90,6 +127,18 @@ const staticOptions = {
         res.set('Cross-Origin-Resource-Policy', 'cross-origin');
         res.set('Cross-Origin-Embedder-Policy', 'unsafe-none');
         res.set('Access-Control-Expose-Headers', 'Content-Length, Content-Type, Last-Modified, ETag');
+        
+        // 为图片文件添加缓存头
+        if (path.match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
+            res.set('Cache-Control', 'public, max-age=31536000');
+            res.set('Expires', new Date(Date.now() + 31536000000).toUTCString());
+        }
+        
+        // 为音频和视频文件添加缓存头
+        if (path.match(/\.(mp3|mp4|wav|ogg|webm)$/i)) {
+            res.set('Cache-Control', 'public, max-age=31536000');
+            res.set('Expires', new Date(Date.now() + 31536000000).toUTCString());
+        }
     }
 };
 
@@ -99,16 +148,18 @@ app.options('/resources/*', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, Cache-Control, Pragma, If-Modified-Since, If-None-Match');
-    res.header('Access-Control-Expose-Headers', 'Content-Length, Content-Type, Last-Modified, ETag');
     res.header('Cross-Origin-Resource-Policy', 'cross-origin');
     res.header('Cross-Origin-Embedder-Policy', 'unsafe-none');
     res.sendStatus(200);
 });
 
-app.use(express.static(path.join(__dirname, 'resources'), staticOptions));
+// 静态文件服务 - 优化版本
+app.use('/resources', express.static(path.join(__dirname, 'resources'), staticOptions));
+
+// 处理uploads目录的静态文件
+app.use('/uploads', express.static(path.join(__dirname, 'uploads'), staticOptions));
 
 // 专门的静态文件路由
-app.use('/resources', express.static(path.join(__dirname, 'resources'), staticOptions));
 app.use('/resources/images', express.static(path.join(__dirname, 'resources', 'images'), staticOptions));
 app.use('/resources/videos', express.static(path.join(__dirname, 'resources', 'videos'), staticOptions));
 app.use('/resources/audio', express.static(path.join(__dirname, 'resources', 'audio'), staticOptions));

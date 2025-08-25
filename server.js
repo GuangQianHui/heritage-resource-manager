@@ -18,8 +18,47 @@ const io = socketIo(server, {
     }
 });
 
+// 动态获取服务器信息
+const getServerInfo = () => {
+    const os = require('os');
+    return {
+        publicIP: process.env.PUBLIC_IP || 'localhost',
+        privateIP: process.env.PRIVATE_IP || '127.0.0.1',
+        instanceId: process.env.INSTANCE_ID || 'unknown',
+        zone: process.env.ZONE || 'unknown',
+        hostname: os.hostname(),
+        platform: os.platform(),
+        arch: os.arch(),
+        cpus: os.cpus().length,
+        memory: Math.round(os.totalmem() / 1024 / 1024 / 1024) + 'GB'
+    };
+};
+
+// 动态CORS配置
+const getCorsOrigins = () => {
+    const serverInfo = getServerInfo();
+    const defaultOrigins = [
+        `http://${serverInfo.publicIP}:3000`,
+        `http://${serverInfo.privateIP}:3000`,
+        'http://localhost:3000',
+        'http://127.0.0.1:3000'
+    ];
+    
+    if (process.env.CORS_ORIGINS) {
+        return process.env.CORS_ORIGINS.split(',').concat(defaultOrigins);
+    }
+    
+    return defaultOrigins;
+};
+
 // 中间件配置
-app.use(cors());
+app.use(cors({
+    origin: getCorsOrigins(),
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Cache-Control', 'Pragma', 'If-Modified-Since', 'If-None-Match']
+}));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -98,57 +137,49 @@ app.use('/api/resources', async (req, res, next) => {
 // 代理静态资源 /resources/* 到资源服务器，保证媒体文件可访问
 app.use('/resources', async (req, res, next) => {
     try {
-        // 确保URL正确编码
-        const encodedUrl = encodeURI(req.originalUrl);
-        const target = `${RESOURCE_SERVER_URL}${encodedUrl}`;
-        console.log(`代理静态资源: ${req.originalUrl} -> ${target}`);
+        const target = `${RESOURCE_SERVER_URL}/resources${req.url}`;
+        console.log(`代理静态资源: ${req.method} ${req.originalUrl} -> ${target}`);
         
-        const r = await fetch(target, {
-            method: 'GET',
-            headers: {
-                'Accept': '*/*',
-                'User-Agent': 'Resource-Proxy/1.0'
-            }
-        });
+        const options = {
+            method: req.method,
+            headers: { ...req.headers }
+        };
         
-        if (!r.ok) {
-            console.error(`静态资源代理失败: ${r.status} ${r.statusText} - ${target}`);
-            return res.status(r.status).end(`静态资源代理失败: ${r.statusText}`);
-        }
+        // 移除可能导致问题的头部
+        delete options.headers.host;
+        delete options.headers.connection;
         
-        // 设置响应头
-        const contentType = r.headers.get('content-type') || 'application/octet-stream';
-        const contentLength = r.headers.get('content-length');
-        const etag = r.headers.get('etag');
-        const lastModified = r.headers.get('last-modified');
+        const response = await fetch(target, options);
+        const contentType = response.headers.get('content-type') || 'application/octet-stream';
         
-        res.status(r.status);
+        res.status(response.status);
         res.setHeader('content-type', contentType);
-        if (contentLength) {
-            res.setHeader('content-length', contentLength);
-        }
-        if (etag) {
-            res.setHeader('etag', etag);
-        }
-        if (lastModified) {
-            res.setHeader('last-modified', lastModified);
-        }
-        
-        // 添加CORS头
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-        res.setHeader('Access-Control-Allow-Headers', 'Range, If-Range, If-Modified-Since, If-None-Match');
+        res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+        res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+        res.setHeader('Cross-Origin-Embedder-Policy', 'unsafe-none');
         
-        // 使用更安全的方式传输数据
-        const arrayBuffer = await r.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        res.send(buffer);
+        // 对于图片文件，添加缓存头
+        if (contentType.startsWith('image/')) {
+            res.setHeader('Cache-Control', 'public, max-age=31536000');
+            res.setHeader('Expires', new Date(Date.now() + 31536000000).toUTCString());
+        }
         
-        console.log(`静态资源代理成功: ${req.originalUrl} (${buffer.length} bytes)`);
-        
-    } catch (e) {
-        console.error('静态资源代理失败:', e);
-        return res.status(502).end('静态资源代理失败');
+        if (contentType.includes('application/json')) {
+            const data = await response.json();
+            return res.json(data);
+        } else {
+            // 对于非JSON响应，使用流式传输
+            response.body.pipe(res);
+        }
+    } catch (error) {
+        console.error('静态资源代理失败:', error);
+        res.status(502).json({ 
+            success: false, 
+            error: '资源服务器连接失败',
+            details: error.message 
+        });
     }
 });
 
