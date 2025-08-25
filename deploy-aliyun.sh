@@ -140,21 +140,9 @@ create_app_directory() {
     # 定义应用目录
     APP_DIR="/opt/heritage-app"
     
-    # 检查目录是否已存在
-    if [[ -d "$APP_DIR" ]]; then
-        log_warn "应用目录已存在: $APP_DIR"
-        read -p "是否清空现有目录？(y/N): " -n 1 -r
-        echo
-        if [[ $REPLY =~ ^[Yy]$ ]]; then
-            log_info "清空现有目录..."
-            sudo rm -rf "$APP_DIR"/*
-        else
-            log_info "保留现有目录内容"
-        fi
-    fi
-    
-    # 创建目录结构
-    log_info "创建应用目录结构..."
+    # 直接清空并创建目录
+    log_info "清空并创建应用目录..."
+    sudo rm -rf "$APP_DIR"
     sudo mkdir -p "$APP_DIR"
     sudo mkdir -p "$APP_DIR/logs"
     sudo mkdir -p "$APP_DIR/uploads"
@@ -168,16 +156,7 @@ create_app_directory() {
     sudo chmod -R 777 "$APP_DIR/uploads"
     sudo chmod -R 755 "$APP_DIR/backups"
     
-    # 验证目录创建
-    if [[ -d "$APP_DIR" && -w "$APP_DIR" ]]; then
-        log_info "✅ 应用目录创建成功: $APP_DIR"
-        log_info "📁 日志目录: $APP_DIR/logs"
-        log_info "📁 上传目录: $APP_DIR/uploads"
-        log_info "📁 备份目录: $APP_DIR/backups"
-    else
-        log_error "❌ 应用目录创建失败: $APP_DIR"
-        exit 1
-    fi
+    log_info "✅ 应用目录创建成功: $APP_DIR"
 }
 
 # 检查网络连接
@@ -207,35 +186,15 @@ download_app() {
     
     cd $APP_DIR
     
-    # 检查是否已有代码
-    if [[ -d ".git" ]]; then
-        log_info "检测到现有代码，更新到最新版本..."
-        git pull origin main
-    else
-        log_info "克隆代码仓库..."
-        git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
-    fi
+    # 直接清空目录并重新克隆
+    log_info "清空目录并重新克隆代码..."
+    rm -rf .git package.json package-lock.json node_modules resources-server
     
-    # 验证代码下载是否成功
-    if [[ ! -f "package.json" ]]; then
-        log_error "❌ package.json文件未找到，代码下载可能失败"
-        log_info "尝试重新克隆代码..."
-        
-        # 清空目录并重新克隆
-        rm -rf .git package.json package-lock.json node_modules
-        git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
-        
-        # 再次验证
-        if [[ ! -f "package.json" ]]; then
-            log_error "❌ 重新克隆后仍无法找到package.json文件"
-            log_error "请检查网络连接和GitHub仓库地址"
-            exit 1
-        fi
-    fi
+    log_info "克隆代码仓库..."
+    git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
     
     # 显示下载的文件信息
     log_info "✅ 代码下载完成"
-    log_info "📄 找到package.json文件"
     log_info "📁 当前目录内容:"
     ls -la | head -10
 }
@@ -246,59 +205,14 @@ install_dependencies() {
     
     cd $APP_DIR
     
-    # 验证package.json存在
-    if [[ ! -f "package.json" ]]; then
-        log_error "❌ package.json文件不存在，无法安装依赖"
-        exit 1
-    fi
-    
-    # 显示package.json信息
-    log_info "📄 package.json信息:"
-    cat package.json | grep -E '"name"|"version"|"description"' | head -3
-    
     # 安装主应用依赖
     log_info "安装主应用依赖..."
-    if npm install; then
-        log_info "✅ 主应用依赖安装成功"
-    else
-        log_error "❌ 主应用依赖安装失败"
-        log_info "尝试使用--force选项重新安装..."
-        if npm install --force; then
-            log_info "✅ 主应用依赖强制安装成功"
-        else
-            log_error "❌ 主应用依赖安装完全失败"
-            exit 1
-        fi
-    fi
-    
-    # 检查资源服务器目录
-    if [[ ! -d "resources-server" ]]; then
-        log_error "❌ resources-server目录不存在"
-        exit 1
-    fi
+    npm install
     
     # 安装资源服务器依赖
     log_info "安装资源服务器依赖..."
     cd resources-server
-    
-    if [[ ! -f "package.json" ]]; then
-        log_error "❌ resources-server/package.json文件不存在"
-        exit 1
-    fi
-    
-    if npm install; then
-        log_info "✅ 资源服务器依赖安装成功"
-    else
-        log_error "❌ 资源服务器依赖安装失败"
-        log_info "尝试使用--force选项重新安装..."
-        if npm install --force; then
-            log_info "✅ 资源服务器依赖强制安装成功"
-        else
-            log_error "❌ 资源服务器依赖安装完全失败"
-            exit 1
-        fi
-    fi
-    
+    npm install
     cd ..
     
     log_info "✅ 所有依赖安装完成"
@@ -312,28 +226,10 @@ setup_environment() {
     
     # 获取系统信息
     PUBLIC_IP=$(curl -s ifconfig.me)
-    PRIVATE_IP=$(hostname -I | awk '{print $1}')
-    HOSTNAME=$(hostname)
-    
-    log_info "检测到公网IP: $PUBLIC_IP"
-    log_info "检测到内网IP: $PRIVATE_IP"
-    log_info "主机名: $HOSTNAME"
-    
-    # 检查是否已有环境变量文件
-    if [[ -f ".env" ]]; then
-        log_warn "环境变量文件已存在"
-        read -p "是否覆盖现有配置？(y/N): " -n 1 -r
-        echo
-        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-            log_info "保留现有环境变量配置"
-            return 0
-        fi
-    fi
     
     # 创建环境变量文件
     cat > .env << EOF
 # 非遗文化传承智能体助手 - 阿里云部署配置
-# 生成时间: $(date '+%Y-%m-%d %H:%M:%S')
 
 # 主服务器配置
 PORT=3000
@@ -345,8 +241,6 @@ RESOURCE_SERVER_MODULAR=true
 
 # 阿里云特定配置
 PUBLIC_IP=$PUBLIC_IP
-PRIVATE_IP=$PRIVATE_IP
-HOSTNAME=$HOSTNAME
 
 # 安全配置
 CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000
@@ -358,26 +252,9 @@ UPLOAD_PATH=./uploads
 # 日志配置
 LOG_LEVEL=info
 LOG_FILE=./logs/app.log
-
-# 性能配置
-NODE_OPTIONS=--max-old-space-size=2048
 EOF
     
-    # 验证环境变量文件
-    if [[ -f ".env" ]]; then
-        log_info "✅ 环境变量配置完成"
-        log_info "📄 配置文件路径: $APP_DIR/.env"
-        
-        # 显示关键配置
-        log_info "🔧 关键配置信息:"
-        log_info "   - 主服务器端口: 3000"
-        log_info "   - 资源服务器端口: 3001"
-        log_info "   - 公网IP: $PUBLIC_IP"
-        log_info "   - 环境模式: production"
-    else
-        log_error "❌ 环境变量配置失败"
-        exit 1
-    fi
+    log_info "✅ 环境变量配置完成"
 }
 
 # 创建PM2配置文件
@@ -386,23 +263,9 @@ create_pm2_config() {
     
     cd $APP_DIR
     
-    # 检查是否已有配置文件
-    if [[ -f "ecosystem.config.js" ]]; then
-        log_warn "PM2配置文件已存在"
-        read -p "是否覆盖现有配置？(y/N): " -n 1 -r
-        echo
-        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-            log_info "保留现有PM2配置"
-            return 0
-        fi
-    fi
-    
     # 获取系统信息用于优化配置
-    local cpu_cores=$(nproc)
     local total_memory=$(free -m | awk 'NR==2{printf "%.0f", $2}')
     local max_memory=$((total_memory / 4))  # 使用1/4内存作为限制
-    
-    log_info "系统信息 - CPU核心: $cpu_cores, 总内存: ${total_memory}MB, 应用内存限制: ${max_memory}MB"
     
     cat > ecosystem.config.js << EOF
 module.exports = {
@@ -416,8 +279,6 @@ module.exports = {
       autorestart: true,
       watch: false,
       max_memory_restart: '${max_memory}M',
-      min_uptime: '10s',
-      max_restarts: 10,
       env: {
         NODE_ENV: 'production',
         PORT: 3000,
@@ -426,9 +287,7 @@ module.exports = {
       error_file: './logs/main-error.log',
       out_file: './logs/main-out.log',
       log_file: './logs/main-combined.log',
-      time: true,
-      log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
-      merge_logs: true
+      time: true
     },
     {
       name: 'heritage-resource-server',
@@ -439,8 +298,6 @@ module.exports = {
       autorestart: true,
       watch: false,
       max_memory_restart: '${max_memory}M',
-      min_uptime: '10s',
-      max_restarts: 10,
       env: {
         NODE_ENV: 'production',
         PORT: 3001,
@@ -449,22 +306,13 @@ module.exports = {
       error_file: '../logs/resource-error.log',
       out_file: '../logs/resource-out.log',
       log_file: '../logs/resource-combined.log',
-      time: true,
-      log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
-      merge_logs: true
+      time: true
     }
   ]
 };
 EOF
     
-    # 验证配置文件
-    if [[ -f "ecosystem.config.js" ]]; then
-        log_info "✅ PM2配置文件创建成功"
-        log_info "📄 配置文件路径: $APP_DIR/ecosystem.config.js"
-    else
-        log_error "❌ PM2配置文件创建失败"
-        exit 1
-    fi
+    log_info "✅ PM2配置文件创建成功"
 }
 
 # 跳过Nginx配置
