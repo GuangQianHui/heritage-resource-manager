@@ -98,14 +98,15 @@
       {
         "name": "小雪.webp",
         "type": "image",
-        "size": 21918,
-        "url": "http://localhost:3001/resources/images/2025-08-09T17-28-04_______.webp"
+        "size": 22492,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-17-13_______.webp"
       }
     ],
     "createdAt": "2025-08-08T08:08:00.000Z",
-    "updatedAt": "2025-08-09T17:28:05.273Z",
+    "updatedAt": "2025-08-25T01:17:16.008Z",
     "type": "traditionalFestivals",
-    "icon": ""
+    "icon": "",
+    "content": "小雪为二十四节气之一，寒潮活动增多，偶有初雪"
   },
   "大雪": {
     "id": "大雪",
@@ -130,11 +131,19 @@
     "technique": "防寒保温、设施农业保暖；起居早睡晚起。",
     "features": "气温低、降雪多、日照短。",
     "funFact": "北方有食羊肉汤、饺子御寒之俗。",
-    "media": [],
+    "media": [
+      {
+        "name": "大雪.jpg",
+        "type": "image",
+        "size": 493125,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-17-38_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T08:08:00.000Z",
-    "updatedAt": "2025-08-08T08:08:00.000Z",
+    "updatedAt": "2025-08-25T01:17:40.166Z",
     "type": "traditionalFestivals",
-    "icon": "fa-snowflake"
+    "icon": "",
+    "content": "二十四节气之一，雪量增大、气候严寒"
   },
   "小寒": {
     "id": "小寒",
@@ -284,11 +293,19 @@
     "technique": "宜疏肝理气、早睡早起；农事上松土、施肥、整畦。",
     "features": "气温回升、降水增，万物生机渐显。",
     "funFact": "民俗有打小人、拜白虎等祈福习惯。",
-    "media": [],
+    "media": [
+      {
+        "name": "惊蛰.webp",
+        "type": "image",
+        "size": 14206,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-18-20_______.webp"
+      }
+    ],
     "createdAt": "2025-08-08T08:05:00.000Z",
-    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-25T01:18:22.048Z",
     "type": "traditionalFestivals",
-    "icon": "fa-bolt"
+    "icon": "",
+    "content": "二十四节气之一，春雷始鸣、蛰虫始振"
   },
   "春分": {
     "id": "春分",
@@ -313,11 +330,19 @@
     "technique": "宜顺应生发之气，多蔬果；农事上适宜播种、锄草。",
     "features": "气候均衡、光照适中，利作物均衡生长。",
     "funFact": "“竖蛋”游戏因昼夜平衡而流行于民间。",
-    "media": [],
+    "media": [
+      {
+        "name": "春分.png",
+        "type": "image",
+        "size": 343380,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-18-02_______.png"
+      }
+    ],
     "createdAt": "2025-08-08T08:05:00.000Z",
-    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-25T01:18:03.351Z",
     "type": "traditionalFestivals",
-    "icon": "fa-balance-scale"
+    "icon": "",
+    "content": "二十四节气之一，昼夜等长、平衡和煦"
   },
   "谷雨": {
     "id": "谷雨",
@@ -466,11 +491,19 @@
     "technique": "清淡饮食、适当午休；农事防高温干热。",
     "features": "高温来临前奏、对流强降水增多。",
     "funFact": "江南有食新、食伏面等应时习俗。",
-    "media": [],
+    "media": [
+      {
+        "name": "小暑.jpg",
+        "type": "image",
+        "size": 41693,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-26-41_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T08:05:00.000Z",
-    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-25T01:26:43.833Z",
     "type": "traditionalFestivals",
-    "icon": "fa-sun"
+    "icon": "",
+    "content": "二十四节气之一，暑气渐盛、雷雨增多"
   },
   "大暑": {
     "id": "大暑",
@@ -495,11 +528,19 @@
     "technique": "防暑降温、补水防晒；农事防涝防风。",
     "features": "全年最热阶段，湿热并重。",
     "funFact": "岭南有伏日饮凉茶、祛暑湿习俗。",
-    "media": [],
+    "media": [
+      {
+        "name": "大暑.webp",
+        "type": "image",
+        "size": 32282,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-24-41_______.webp"
+      }
+    ],
     "createdAt": "2025-08-08T08:05:00.000Z",
-    "updatedAt": "2025-08-08T08:05:00.000Z",
+    "updatedAt": "2025-08-25T01:24:43.765Z",
     "type": "traditionalFestivals",
-    "icon": "fa-sun"
+    "icon": "",
+    "content": "二十四节气之一，一年最热、雷雨频仍"
   },
   "立秋": {
     "id": "立秋",

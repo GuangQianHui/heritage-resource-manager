@@ -1626,11 +1626,19 @@
     "technique": "中路梆子唱腔高亢激昂，表演粗犷豪放，以历史剧和武戏见长，音乐伴奏以梆子为主。",
     "features": "唱腔高亢，表演粗犷，题材丰富，音乐伴奏激昂，具有浓郁的山西地方特色。",
     "funFact": "山西中路梆子是山西文化的重要组成部分，与北路梆子、蒲剧并称为山西三大梆子。",
-    "media": [],
+    "media": [
+      {
+        "name": "山西中路梆子.jpg",
+        "type": "image",
+        "size": 199091,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-01-24___________________.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:10:00.000Z",
-    "updatedAt": "2025-08-08T07:10:00.000Z",
+    "updatedAt": "2025-08-25T01:01:27.048Z",
     "type": "traditionalOpera",
-    "icon": "fa-music"
+    "icon": "fa-music",
+    "content": "山西地方戏曲，唱腔高亢，表演粗犷，以历史剧和武戏著称"
   },
   "陕西秦腔": {
     "id": "陕西秦腔",
@@ -1660,11 +1668,19 @@
     "technique": "秦腔唱腔激昂豪放，表演粗犷有力，以历史剧见长，音乐伴奏以梆子为主。",
     "features": "唱腔激昂，表演豪放，题材丰富，音乐伴奏有力，具有浓郁的陕西地方特色。",
     "funFact": "陕西秦腔被誉为'梆子腔之祖'，对全国梆子腔的发展产生了重要影响。",
-    "media": [],
+    "media": [
+      {
+        "name": "陕西秦腔.jpeg",
+        "type": "image",
+        "size": 421385,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-02-18_____________.jpeg"
+      }
+    ],
     "createdAt": "2025-08-08T07:10:00.000Z",
-    "updatedAt": "2025-08-08T07:10:00.000Z",
+    "updatedAt": "2025-08-25T01:02:19.945Z",
     "type": "traditionalOpera",
-    "icon": "fa-music"
+    "icon": "fa-music",
+    "content": "陕西地方戏曲，唱腔激昂，表演豪放，被誉为'梆子腔之祖'"
   },
   "甘肃秦腔": {
     "id": "甘肃秦腔",
@@ -1694,11 +1710,19 @@
     "technique": "甘肃秦腔唱腔高亢激昂，表演粗犷豪放，以历史剧和武戏见长，音乐伴奏以梆子为主。",
     "features": "唱腔高亢，表演粗犷，题材丰富，音乐伴奏激昂，具有浓郁的甘肃地方特色。",
     "funFact": "甘肃秦腔是甘肃文化的重要组成部分，深受当地群众喜爱。",
-    "media": [],
+    "media": [
+      {
+        "name": "甘肃秦腔.jpg",
+        "type": "image",
+        "size": 270707,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-03-07_____________.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:10:00.000Z",
-    "updatedAt": "2025-08-08T07:10:00.000Z",
+    "updatedAt": "2025-08-25T01:03:09.660Z",
     "type": "traditionalOpera",
-    "icon": "fa-music"
+    "icon": "fa-music",
+    "content": "甘肃地方戏曲，唱腔高亢，表演粗犷，以历史剧和武戏著称"
   },
   "青海秦腔": {
     "id": "青海秦腔",
@@ -1728,11 +1752,19 @@
     "technique": "青海秦腔唱腔高亢激昂，表演粗犷豪放，以历史剧和武戏见长，音乐伴奏以梆子为主。",
     "features": "唱腔高亢，表演粗犷，题材丰富，音乐伴奏激昂，具有浓郁的青海地方特色。",
     "funFact": "青海秦腔是青海文化的重要组成部分，深受当地群众喜爱。",
-    "media": [],
+    "media": [
+      {
+        "name": "青海秦腔.webp",
+        "type": "image",
+        "size": 17528,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-06-16_____________.webp"
+      }
+    ],
     "createdAt": "2025-08-08T07:10:00.000Z",
-    "updatedAt": "2025-08-08T07:10:00.000Z",
+    "updatedAt": "2025-08-25T01:06:16.765Z",
     "type": "traditionalOpera",
-    "icon": "fa-music"
+    "icon": "fa-music",
+    "content": "青海地方戏曲，唱腔高亢，表演粗犷，以历史剧和武戏著称"
   },
   "宁夏秦腔": {
     "id": "宁夏秦腔",

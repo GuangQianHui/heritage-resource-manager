@@ -991,11 +991,19 @@
     "technique": "春秋二季采挖，除去须根，晒干切片。",
     "features": "苦寒清泄，上焦实热之常用。",
     "funFact": "安胎多取炙黄芩，更为平和。",
-    "media": [],
+    "media": [
+      {
+        "name": "黄芩.jpg",
+        "type": "image",
+        "size": 52189,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-07-15_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:07:17.323Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "苦寒清热、燥湿泻火，擅长上焦肺胃之热"
   },
   "桔梗": {
     "id": "桔梗",
@@ -1018,11 +1026,19 @@
     "technique": "秋季采根，洗净晒干，切片用。",
     "features": "味辛开宣，上行咽喉。",
     "funFact": "'桔梗汤'是嗓音工作者常用调护方之一。",
-    "media": [],
+    "media": [
+      {
+        "name": "桔梗.jpeg",
+        "type": "image",
+        "size": 68515,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-07-58_______.jpeg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:08:00.773Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "宣肺利咽、祛痰排脓，载药上行之使药"
   },
   "桑叶": {
     "id": "桑叶",
@@ -1045,11 +1061,19 @@
     "technique": "夏秋采摘嫩叶，阴干保存。",
     "features": "轻清上扬，善清头目风热。",
     "funFact": "桑叶配菊花，为经典清凉茶搭档。",
-    "media": [],
+    "media": [
+      {
+        "name": "桑叶.jpeg",
+        "type": "image",
+        "size": 146275,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-09-43_______.jpeg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:09:45.372Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "疏风清热、清肺润燥，并能清肝明目"
   },
   "葛根": {
     "id": "葛根",
@@ -1072,11 +1096,19 @@
     "technique": "秋季采挖肥大根，去皮切块晒干。",
     "features": "善舒颈背、解肌退热。",
     "funFact": "“凉粉葛粉”亦出于葛根，药食兼用。",
-    "media": [],
+    "media": [
+      {
+        "name": "葛根.jpg",
+        "type": "image",
+        "size": 119394,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-13-28_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:13:29.539Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "解肌退热、生津止渴，并能升阳止泻"
   },
   "石膏": {
     "id": "石膏",
@@ -1099,11 +1131,19 @@
     "technique": "矿石粉碎净化，按法制成细末入方。",
     "features": "量大力峻，直清阳明气分热。",
     "funFact": "白虎汤以石膏为君，清热生津。",
-    "media": [],
+    "media": [
+      {
+        "name": "石膏.jpg",
+        "type": "image",
+        "size": 1007052,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-08-42_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:08:44.460Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "大寒之品，清气分实热，除烦止渴"
   },
   "知母": {
     "id": "知母",
@@ -1126,11 +1166,19 @@
     "technique": "秋季采挖根茎，晒干切片。",
     "features": "既清热又滋阴，标本兼顾。",
     "funFact": "白虎加人参汤中常见知母配伍。",
-    "media": [],
+    "media": [
+      {
+        "name": "知母.jpg",
+        "type": "image",
+        "size": 121830,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-10-40_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:10:41.752Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "苦寒滋阴，清热泻火，生津润燥"
   },
   "枇杷叶": {
     "id": "枇杷叶",
@@ -1153,11 +1201,19 @@
     "technique": "夏秋采叶，去毛，晒干备用。",
     "features": "清降兼润，肺胃两顾。",
     "funFact": "枇杷叶去毛更利咽喉，口感佳。",
-    "media": [],
+    "media": [
+      {
+        "name": "枇杷叶.jpg",
+        "type": "image",
+        "size": 494453,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-11-28__________.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:11:29.852Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "清肺止咳、降逆止呕，兼能润燥"
   },
   "百合": {
     "id": "百合",
@@ -1180,11 +1236,19 @@
     "technique": "秋季采挖鳞茎，漂洗去膜，蒸晒干燥。",
     "features": "甘润而清，宁心润肺。",
     "funFact": "百合配莲子是经典养心安神甜品组合。",
-    "media": [],
+    "media": [
+      {
+        "name": "百合.jpg",
+        "type": "image",
+        "size": 108434,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-13-50_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:36:00.000Z",
-    "updatedAt": "2025-08-08T07:36:00.000Z",
+    "updatedAt": "2025-08-25T01:13:51.953Z",
     "type": "traditionalMedicine",
-    "icon": "fa-leaf"
+    "icon": "fa-leaf",
+    "content": "养阴润肺、清心安神，肺燥咳嗽与虚烦不寐常用"
   },
   "川贝母": {
     "id": "川贝母",

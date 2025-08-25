@@ -774,11 +774,25 @@
     "technique": "制皮制馅；成型压花；上蛋液烘焙；回油静置风味更佳。",
     "features": "皮馅比例讲究、纹样精美，甜咸兼备。",
     "funFact": "“花好月圆人团圆”促成赠饼文化。",
-    "media": [],
+    "media": [
+      {
+        "name": "月饼.jpg",
+        "type": "image",
+        "size": 437692,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-20-01_______.jpg"
+      },
+      {
+        "name": "月饼.mp4",
+        "type": "video",
+        "size": 1171636,
+        "url": "http://localhost:3001/resources/videos/2025-08-25T01-20-01_______.mp4"
+      }
+    ],
     "createdAt": "2025-08-09T16:05:00.000Z",
-    "updatedAt": "2025-08-09T17:20:20.006Z",
+    "updatedAt": "2025-08-25T01:20:04.588Z",
     "type": "traditionalFoods",
-    "icon": "fa-utensils"
+    "icon": "fa-utensils",
+    "content": "月饼为中秋节应景食品，饼皮包裹莲蓉、豆沙、伍仁、蛋黄等馅料烘焙，寓意团圆美满。"
   },
   "粉蒸肉": {
     "id": "粉蒸肉",
@@ -902,11 +916,19 @@
     "technique": "和面发酵；熬制叉烧馅；包入褶口；旺火蒸熟。",
     "features": "皮裂“笑口”、甜咸适中、汁香浓郁。",
     "funFact": "“一盅两件”常把叉烧包列为“两件”之一。",
-    "media": [],
+    "media": [
+      {
+        "name": "叉烧包.png",
+        "type": "image",
+        "size": 460952,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-21-20__________.png"
+      }
+    ],
     "createdAt": "2025-08-09T16:05:00.000Z",
-    "updatedAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-25T01:21:20.864Z",
     "type": "traditionalFoods",
-    "icon": "fa-utensils"
+    "icon": "fa-utensils",
+    "content": "粤式点心代表，松软面皮包甜咸叉烧馅"
   },
   "腊八粥": {
     "id": "腊八粥",
@@ -961,11 +983,19 @@
     "technique": "浸米磨浆；入模蒸透；冷却定型；可切片再烹。",
     "features": "软糯韧性、可塑性强，甜咸百搭。",
     "funFact": "江南有红糖年糕，东北有黄米年糕。",
-    "media": [],
+    "media": [
+      {
+        "name": "年糕.jpg",
+        "type": "image",
+        "size": 95944,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-22-19_______.jpg"
+      }
+    ],
     "createdAt": "2025-08-09T16:05:00.000Z",
-    "updatedAt": "2025-08-09T16:05:00.000Z",
+    "updatedAt": "2025-08-25T01:22:21.918Z",
     "type": "traditionalFoods",
-    "icon": "fa-utensils"
+    "icon": "fa-utensils",
+    "content": "新年常食糯米糕点，寓意年年高"
   },
   "汤圆": {
     "id": "汤圆",
@@ -2299,10 +2329,18 @@
     "technique": "番茄处理；蛋花汤制作；调味。",
     "features": "酸甜可口、营养丰富、味道鲜美。",
     "funFact": "番茄蛋花汤是中国人最爱的传统名菜之一。",
-    "media": [],
+    "media": [
+      {
+        "name": "番茄蛋花汤.jpg",
+        "type": "image",
+        "size": 60026,
+        "url": "http://localhost:3001/resources/images/2025-08-25T01-29-01________________.jpg"
+      }
+    ],
     "createdAt": "2025-08-08T07:15:00.000Z",
-    "updatedAt": "2025-08-08T07:15:00.000Z",
+    "updatedAt": "2025-08-25T01:29:02.992Z",
     "type": "traditionalFoods",
-    "icon": "fa-utensils"
+    "icon": "fa-utensils",
+    "content": "中国传统名菜，番茄配以蛋花汤，酸甜可口"
   }
 }
