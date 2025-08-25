@@ -43,7 +43,8 @@
 4. **克隆项目**
 
    ```bash
-   git clone https://github.com/GuangQianHui/heritage-resource-manager.git
+   git clone https://github.com/GuangQianHui
+   /heritage-resource-manager.git
    cd heritage-resource-manager
    ```
 
