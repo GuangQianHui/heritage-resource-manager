@@ -180,6 +180,27 @@ create_app_directory() {
     fi
 }
 
+# 检查网络连接
+check_network() {
+    log_step "检查网络连接..."
+    
+    # 检查GitHub连接
+    if curl -s --connect-timeout 10 https://github.com > /dev/null; then
+        log_info "✅ GitHub连接正常"
+    else
+        log_error "❌ 无法连接到GitHub，请检查网络连接"
+        exit 1
+    fi
+    
+    # 检查npm registry连接
+    if curl -s --connect-timeout 10 https://registry.npmjs.org > /dev/null; then
+        log_info "✅ npm registry连接正常"
+    else
+        log_error "❌ 无法连接到npm registry，请检查网络连接"
+        exit 1
+    fi
+}
+
 # 下载应用代码
 download_app() {
     log_step "下载应用代码..."
@@ -195,7 +216,28 @@ download_app() {
         git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
     fi
     
-    log_info "代码下载完成"
+    # 验证代码下载是否成功
+    if [[ ! -f "package.json" ]]; then
+        log_error "❌ package.json文件未找到，代码下载可能失败"
+        log_info "尝试重新克隆代码..."
+        
+        # 清空目录并重新克隆
+        rm -rf .git package.json package-lock.json node_modules
+        git clone https://github.com/GuangQianHui/heritage-resource-manager.git .
+        
+        # 再次验证
+        if [[ ! -f "package.json" ]]; then
+            log_error "❌ 重新克隆后仍无法找到package.json文件"
+            log_error "请检查网络连接和GitHub仓库地址"
+            exit 1
+        fi
+    fi
+    
+    # 显示下载的文件信息
+    log_info "✅ 代码下载完成"
+    log_info "📄 找到package.json文件"
+    log_info "📁 当前目录内容:"
+    ls -la | head -10
 }
 
 # 安装依赖
@@ -204,17 +246,62 @@ install_dependencies() {
     
     cd $APP_DIR
     
+    # 验证package.json存在
+    if [[ ! -f "package.json" ]]; then
+        log_error "❌ package.json文件不存在，无法安装依赖"
+        exit 1
+    fi
+    
+    # 显示package.json信息
+    log_info "📄 package.json信息:"
+    cat package.json | grep -E '"name"|"version"|"description"' | head -3
+    
     # 安装主应用依赖
     log_info "安装主应用依赖..."
-    npm install
+    if npm install; then
+        log_info "✅ 主应用依赖安装成功"
+    else
+        log_error "❌ 主应用依赖安装失败"
+        log_info "尝试使用--force选项重新安装..."
+        if npm install --force; then
+            log_info "✅ 主应用依赖强制安装成功"
+        else
+            log_error "❌ 主应用依赖安装完全失败"
+            exit 1
+        fi
+    fi
+    
+    # 检查资源服务器目录
+    if [[ ! -d "resources-server" ]]; then
+        log_error "❌ resources-server目录不存在"
+        exit 1
+    fi
     
     # 安装资源服务器依赖
     log_info "安装资源服务器依赖..."
     cd resources-server
-    npm install
+    
+    if [[ ! -f "package.json" ]]; then
+        log_error "❌ resources-server/package.json文件不存在"
+        exit 1
+    fi
+    
+    if npm install; then
+        log_info "✅ 资源服务器依赖安装成功"
+    else
+        log_error "❌ 资源服务器依赖安装失败"
+        log_info "尝试使用--force选项重新安装..."
+        if npm install --force; then
+            log_info "✅ 资源服务器依赖强制安装成功"
+        else
+            log_error "❌ 资源服务器依赖安装完全失败"
+            exit 1
+        fi
+    fi
+    
     cd ..
     
-    log_info "依赖安装完成"
+    log_info "✅ 所有依赖安装完成"
 }
 
 # 配置环境变量
@@ -604,6 +691,9 @@ main() {
     
     # 创建应用目录
     create_app_directory
+    
+    # 检查网络连接
+    check_network
     
     # 下载应用代码
     download_app
