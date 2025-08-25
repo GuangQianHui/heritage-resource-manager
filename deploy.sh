@@ -116,7 +116,7 @@ cat > .env << EOF
 # 生产环境配置
 NODE_ENV=production
 PORT=3000
-RESOURCE_SERVER_URL=http://localhost:3001
+RESOURCE_SERVER_URL=http://121.40.185.158:3001
 
 # 安全配置
 JWT_SECRET=$(openssl rand -base64 32)
@@ -190,7 +190,7 @@ server {
 
     # 主服务器代理
     location / {
-        proxy_pass http://localhost:3000;
+        proxy_pass http://121.40.185.158:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade \$http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -208,7 +208,7 @@ server {
 
     # 静态文件代理
     location /resources/ {
-        proxy_pass http://localhost:3001;
+        proxy_pass http://121.40.185.158:3001;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
@@ -221,7 +221,7 @@ server {
 
     # API代理
     location /api/ {
-        proxy_pass http://localhost:3001;
+        proxy_pass http://121.40.185.158:3001;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;

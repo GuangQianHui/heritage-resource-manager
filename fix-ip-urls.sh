@@ -37,7 +37,7 @@ get_public_ip() {
                 curl -s --max-time 10 http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null ||
                 curl -s --max-time 10 ifconfig.me 2>/dev/null ||
                 curl -s --max-time 10 ipinfo.io/ip 2>/dev/null ||
-                echo "localhost")
+                echo "121.40.185.158")
     
     log_success "公网IP: $PUBLIC_IP"
     export PUBLIC_IP

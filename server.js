@@ -22,7 +22,7 @@ const io = socketIo(server, {
 const getServerInfo = () => {
     const os = require('os');
     return {
-        publicIP: process.env.PUBLIC_IP || 'localhost',
+        publicIP: process.env.PUBLIC_IP || '121.40.185.158',
         privateIP: process.env.PRIVATE_IP || '127.0.0.1',
         instanceId: process.env.INSTANCE_ID || 'unknown',
         zone: process.env.ZONE || 'unknown',
@@ -40,7 +40,7 @@ const getCorsOrigins = () => {
     const defaultOrigins = [
         `http://${serverInfo.publicIP}:3000`,
         `http://${serverInfo.privateIP}:3000`,
-        'http://localhost:3000',
+        'http://121.40.185.158:3000',
         'http://127.0.0.1:3000'
     ];
     
@@ -69,7 +69,7 @@ app.use(express.static(path.join(__dirname)));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // 资源服务器代理：将资源相关请求转发到独立资源服务器(端口3001)
-const RESOURCE_SERVER_URL = process.env.RESOURCE_SERVER_URL || 'http://localhost:3001';
+const RESOURCE_SERVER_URL = process.env.RESOURCE_SERVER_URL || 'http://121.40.185.158:3001';
 
 // 支持模块化资源服务器的配置
 const RESOURCE_SERVER_MODULAR = process.env.RESOURCE_SERVER_MODULAR === 'true' || false;
@@ -1094,9 +1094,9 @@ app.use((req, res) => {
 // 启动服务器
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`🚀 主服务器已启动，访问地址: http://localhost:${PORT}`);
-    console.log(`📁 静态文件服务: http://localhost:${PORT}/index.html`);
-    console.log(`🔧 API文档: http://localhost:${PORT}/api/status`);
+    console.log(`🚀 主服务器已启动，访问地址: http://121.40.185.158:${PORT}`);
+    console.log(`📁 静态文件服务: http://121.40.185.158:${PORT}/index.html`);
+    console.log(`🔧 API文档: http://121.40.185.158:${PORT}/api/status`);
     console.log(`🔄 资源服务器代理: ${RESOURCE_SERVER_URL}`);
     console.log(`📦 资源服务器模式: ${RESOURCE_SERVER_MODULAR ? '模块化' : '传统'}`);
     console.log(`📝 资源服务器脚本: ${RESOURCE_SERVER_SCRIPT}`);

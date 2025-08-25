@@ -37,7 +37,7 @@ get_server_info() {
                 curl -s --max-time 10 http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null ||
                 curl -s --max-time 10 ifconfig.me 2>/dev/null ||
                 curl -s --max-time 10 ipinfo.io/ip 2>/dev/null ||
-                echo "localhost")
+                echo "121.40.185.158")
     
     # 获取内网IP
     PRIVATE_IP=$(curl -s --max-time 10 http://100.100.100.200/latest/meta-data/private-ipv4 2>/dev/null ||
@@ -77,7 +77,7 @@ update_env_config() {
         cp .env .env.old
         
         # 更新CORS配置
-        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000|g" .env
+        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://121.40.185.158:3000,http://127.0.0.1:3000|g" .env
         
         # 更新资源服务器URL - 使用公网IP确保前端可以访问
         sed -i "s|RESOURCE_SERVER_URL=.*|RESOURCE_SERVER_URL=http://$PUBLIC_IP:3001|g" .env
@@ -99,7 +99,7 @@ update_env_config() {
         cp resources-server/.env resources-server/.env.old
         
         # 更新CORS配置 - 主要使用公网IP
-        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000|g" resources-server/.env
+        sed -i "s|CORS_ORIGINS=.*|CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://121.40.185.158:3000,http://127.0.0.1:3000|g" resources-server/.env
         
         # 添加服务器信息
         if ! grep -q "PUBLIC_IP=" resources-server/.env; then
@@ -170,7 +170,7 @@ test_image_access() {
     echo "测试图片" > resources-server/resources/images/test/test.txt
     
     # 测试本地访问
-    if curl -s -o /dev/null -w "%{http_code}" "http://localhost:3001/resources/images/test/test.txt" | grep -q "200"; then
+    if curl -s -o /dev/null -w "%{http_code}" "http://121.40.185.158:3001/resources/images/test/test.txt" | grep -q "200"; then
         log_success "本地图片访问正常"
     else
         log_warning "本地图片访问可能有问题"

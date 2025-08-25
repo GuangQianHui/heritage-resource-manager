@@ -113,9 +113,9 @@ async function main() {
         const mainServer = await startServer(config.mainServer);
         
         log('✅ 所有服务器启动成功！', 'green');
-        log('🌐 主服务器: http://localhost:3000', 'cyan');
-        log('🔧 资源服务器: http://localhost:3001', 'cyan');
-        log('📖 前端界面: http://localhost:3000/index.html', 'cyan');
+        log('🌐 主服务器: http://121.40.185.158:3000', 'cyan');
+        log('🔧 资源服务器: http://121.40.185.158:3001', 'cyan');
+        log('📖 前端界面: http://121.40.185.158:3000/index.html', 'cyan');
         log('==========================================', 'cyan');
         log('按 Ctrl+C 停止所有服务器', 'yellow');
 

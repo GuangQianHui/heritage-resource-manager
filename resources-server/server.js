@@ -24,7 +24,7 @@ const io = socketIo(server, {
 const getServerInfo = () => {
     const os = require('os');
     return {
-        publicIP: process.env.PUBLIC_IP || 'localhost',
+        publicIP: process.env.PUBLIC_IP || '121.40.185.158',
         privateIP: process.env.PRIVATE_IP || '127.0.0.1',
         instanceId: process.env.INSTANCE_ID || 'unknown',
         zone: process.env.ZONE || 'unknown',
@@ -44,9 +44,9 @@ const getCorsOrigins = () => {
         `http://${serverInfo.privateIP}:3000`,
         `http://${serverInfo.publicIP}:3001`,
         `http://${serverInfo.privateIP}:3001`,
-        'http://localhost:3000',
+        'http://121.40.185.158:3000',
         'http://127.0.0.1:3000',
-        'http://localhost:3001',
+        'http://121.40.185.158:3001',
         'http://127.0.0.1:3001'
     ];
     
@@ -1317,7 +1317,7 @@ app.post('/api/upload', upload.single('file'), async (req, res) => {
         }
         
         // 生成完整的URL路径
-        const baseUrl = process.env.BASE_URL || 'http://localhost:3001';
+        const baseUrl = process.env.BASE_URL || 'http://121.40.185.158:3001';
         const urlPath = `${baseUrl}/resources/${urlSubDir}${req.file.filename}`;
         
         console.log('文件上传成功:', {
@@ -1376,7 +1376,7 @@ app.post('/api/upload-file', upload.single('file'), async (req, res) => {
         }
         
         // 生成完整的URL路径
-        const baseUrl = process.env.BASE_URL || 'http://localhost:3001';
+        const baseUrl = process.env.BASE_URL || 'http://121.40.185.158:3001';
         const urlPath = `${baseUrl}/resources/${urlSubDir}${req.file.filename}`;
         
         console.log('文件上传到资源库成功:', {
@@ -1477,7 +1477,7 @@ app.post('/api/resources/:category/:id/media', upload.single('file'), async (req
         }
         
         // 生成完整的URL路径
-        const baseUrl = process.env.BASE_URL || 'http://localhost:3001';
+        const baseUrl = process.env.BASE_URL || 'http://121.40.185.158:3001';
         const urlPath = `${baseUrl}/resources/${urlSubDir}${req.file.filename}`;
         
         // 检查媒体文件限制
@@ -1919,8 +1919,8 @@ async function startServer() {
         
         server.listen(PORT, () => {
             console.log(`资源服务器运行在端口 ${PORT}`);
-            console.log(`API地址: http://localhost:${PORT}/api`);
-            console.log(`静态文件: http://localhost:${PORT}/resources`);
+            console.log(`API地址: http://121.40.185.158:${PORT}/api`);
+            console.log(`静态文件: http://121.40.185.158:${PORT}/resources`);
         });
     } catch (error) {
         console.error('启动服务器失败:', error);

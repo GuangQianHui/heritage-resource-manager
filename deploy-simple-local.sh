@@ -44,7 +44,7 @@ get_server_info() {
                 curl -s --max-time 10 http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null ||
                 curl -s --max-time 10 ifconfig.me 2>/dev/null ||
                 curl -s --max-time 10 ipinfo.io/ip 2>/dev/null ||
-                echo "localhost")
+                echo "121.40.185.158")
     
     # 获取内网IP
     PRIVATE_IP=$(curl -s --max-time 10 http://100.100.100.200/latest/meta-data/private-ipv4 2>/dev/null ||
@@ -162,7 +162,7 @@ INSTANCE_ID=$INSTANCE_ID
 ZONE=$ZONE
 
 # 安全配置 - 主要使用公网IP
-CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000
+CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://121.40.185.158:3000,http://127.0.0.1:3000
 EOF
 
     # 资源服务器环境配置
@@ -178,7 +178,7 @@ INSTANCE_ID=$INSTANCE_ID
 ZONE=$ZONE
 
 # CORS配置 - 主要使用公网IP，确保前端可以访问
-CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://localhost:3000,http://127.0.0.1:3000
+CORS_ORIGINS=http://$PUBLIC_IP:3000,http://$PUBLIC_IP:3001,http://121.40.185.158:3000,http://127.0.0.1:3000
 
 # 静态文件配置
 STATIC_FILE_PATH=./resources
@@ -359,8 +359,8 @@ EOF
 const http = require('http');
 
 const checks = [
-    { name: '主应用', url: 'http://localhost:3000', port: 3000 },
-    { name: '资源服务器', url: 'http://localhost:3001', port: 3001 }
+    { name: '主应用', url: 'http://121.40.185.158:3000', port: 3000 },
+    { name: '资源服务器', url: 'http://121.40.185.158:3001', port: 3001 }
 ];
 
 async function checkHealth() {
