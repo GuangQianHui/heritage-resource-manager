@@ -133,11 +133,77 @@ configure_firewall() {
 
 # 创建应用目录
 create_app_directory() {
-    APP_DIR="/
-    /heritage-app"
-    log_info "创建应用目录: $APP_DIR"
+    log_info "创建应用目录..."
+    
+    APP_DIR="/opt/heritage-app"
+    
+    # 检查目录是否已存在
+    if [ -d "$APP_DIR" ]; then
+        log_warning "应用目录已存在: $APP_DIR"
+        
+        # 询问是否备份现有数据
+        read -p "是否备份现有数据到 /opt/heritage-app-backup-$(date +%Y%m%d-%H%M%S)? (y/N): " -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            BACKUP_DIR="/opt/heritage-app-backup-$(date +%Y%m%d-%H%M%S)"
+            log_info "备份现有数据到: $BACKUP_DIR"
+            sudo cp -r $APP_DIR $BACKUP_DIR
+            sudo chown -R $USER:$USER $BACKUP_DIR
+            log_success "备份完成: $BACKUP_DIR"
+        fi
+        
+        # 清理现有目录
+        log_info "清理现有目录..."
+        sudo rm -rf $APP_DIR
+    fi
+    
+    # 创建主应用目录
+    log_info "创建主应用目录: $APP_DIR"
     sudo mkdir -p $APP_DIR
-    sudo chown $USER:$USER $APP_DIR
+    
+    # 创建完整的目录结构
+    log_info "创建完整的目录结构..."
+    sudo mkdir -p $APP_DIR/{logs,uploads,temp,backups}
+    sudo mkdir -p $APP_DIR/resources-server/{resources/{images,videos,audio,documents},uploads,logs,temp}
+    sudo mkdir -p $APP_DIR/config
+    sudo mkdir -p $APP_DIR/scripts
+    
+    # 设置目录权限
+    log_info "设置目录权限..."
+    sudo chown -R $USER:$USER $APP_DIR
+    sudo chmod -R 755 $APP_DIR
+    
+    # 设置特殊权限
+    sudo chmod 775 $APP_DIR/logs
+    sudo chmod 775 $APP_DIR/uploads
+    sudo chmod 775 $APP_DIR/resources-server/uploads
+    sudo chmod 775 $APP_DIR/resources-server/logs
+    
+    # 创建必要的空文件
+    log_info "创建必要的空文件..."
+    touch $APP_DIR/logs/.gitkeep
+    touch $APP_DIR/uploads/.gitkeep
+    touch $APP_DIR/resources-server/uploads/.gitkeep
+    touch $APP_DIR/resources-server/logs/.gitkeep
+    
+    # 验证目录创建
+    if [ -d "$APP_DIR" ] && [ -w "$APP_DIR" ]; then
+        log_success "应用目录创建完成: $APP_DIR"
+        log_info "目录结构:"
+        tree $APP_DIR -L 3 2>/dev/null || find $APP_DIR -type d | head -20
+    else
+        log_error "应用目录创建失败: $APP_DIR"
+        exit 1
+    fi
+    
+    # 检查磁盘空间
+    DISK_SPACE=$(df -h $APP_DIR | awk 'NR==2 {print $4}')
+    log_info "可用磁盘空间: $DISK_SPACE"
+    
+    # 检查内存
+    MEMORY=$(free -h | awk 'NR==2 {print $7}')
+    log_info "可用内存: $MEMORY"
+    
     export APP_DIR
 }
 

@@ -88,7 +88,40 @@ check_app_directory() {
         exit 1
     fi
     
-    log_success "应用目录检查通过: $APP_DIR"
+    # 检查并创建必要的子目录
+    log_info "检查并创建必要的子目录..."
+    mkdir -p $APP_DIR/{logs,uploads,temp,backups}
+    mkdir -p $APP_DIR/resources-server/{resources/{images,videos,audio,documents},uploads,logs,temp}
+    mkdir -p $APP_DIR/config
+    mkdir -p $APP_DIR/scripts
+    
+    # 设置目录权限
+    log_info "设置目录权限..."
+    chmod -R 755 $APP_DIR
+    chmod 775 $APP_DIR/logs
+    chmod 775 $APP_DIR/uploads
+    chmod 775 $APP_DIR/resources-server/uploads
+    chmod 775 $APP_DIR/resources-server/logs
+    
+    # 验证目录结构
+    log_info "验证目录结构..."
+    if [ -d "$APP_DIR/resources-server" ] && [ -d "$APP_DIR/logs" ] && [ -d "$APP_DIR/uploads" ]; then
+        log_success "应用目录检查通过: $APP_DIR"
+        log_info "目录结构:"
+        tree $APP_DIR -L 3 2>/dev/null || find $APP_DIR -type d | head -20
+    else
+        log_error "应用目录结构不完整"
+        exit 1
+    fi
+    
+    # 检查磁盘空间
+    DISK_SPACE=$(df -h $APP_DIR | awk 'NR==2 {print $4}')
+    log_info "可用磁盘空间: $DISK_SPACE"
+    
+    # 检查内存
+    MEMORY=$(free -h | awk 'NR==2 {print $7}')
+    log_info "可用内存: $MEMORY"
+    
     export APP_DIR
 }
 
